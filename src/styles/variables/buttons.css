@@ -1,0 +1,52 @@
+/* ==========================================================================
+6. BUTTONS
+========================================================================== */
+:root {
+  /*==================  Primary Button Styles *========================*/
+
+  /* Primary default button border color */
+  --button-border: var(--color-brand-blue);
+
+  /* Primary default button background color */
+  --button-background: var(--color-brand-blue);
+
+  /* Primary default button text color */
+  --button-text: var(--color-neutral-white);
+
+  /* Primary button border color on hover */
+  --button-border-hover: var(--color-brand-blue);
+
+  /* Primary button background color on hover */
+  --button-background-hover: var(--color-brand-blue-faded);
+
+  /* Primary button text color on hover */
+  --button-text-hover: var(--color-neutral-white);
+
+  /*==================  Secondary Button Styles ========================*/
+
+  /* Secondary button border color */
+  --button-secondary-border: var(--color-neutral-darker);
+
+  /* Secondary button background color */
+  --button-secondary-background: transparent;
+
+  /* Secondary button text color */
+  --button-secondary-text: var(--color-neutral-black-off);
+
+  /* Secondary button border color on hover */
+  --button-secondary-border-hover: var(--color-brand-blue);
+
+  /* Secondary button background color on hover */
+  --button-secondary-background-hover: var(--color-brand-blue);
+
+  /* Secondary button text color on hover */
+  --button-secondary-text-hover: var(--color-neutral-white);
+
+  /*==================  Text Button Styles ========================*/
+
+  /* Text button text color */
+  --button-text-text: var(--color-neutral-black-off);
+
+  /* Text button text color on hover */
+  --button-text-text-hover: var(--color-brand-blue);
+}

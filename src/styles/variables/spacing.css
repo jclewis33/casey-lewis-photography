@@ -1,0 +1,129 @@
+/* ==========================================================================
+       SPACING & SIZING
+   ========================================================================== */
+
+:root {
+  /* Horizontal Section Padding Clamp */
+  --padding-global: clamp(1.25rem, 2.018vw + 0.777rem, 2.5rem);
+
+  /* Vertical Section Padding Clamp */
+  --padding-small: clamp(2rem, 3.229vw + 1.243rem, 4rem);
+  --padding-medium: clamp(3rem, 3.229vw + 2.243rem, 5rem);
+  --padding-large: clamp(4rem, 4.844vw + 2.865rem, 7rem);
+
+  /* Section Padding No Clamp */
+  --padding-none: 0rem;
+  --padding-section-medium: 5rem;
+  --padding-section-sitewide: 7rem;
+  --padding-section-none: 0rem;
+
+  /* Sizes */
+  --size-0-125rem: 0.125rem;
+  --size-0-25rem: 0.25rem;
+  --size-0-5rem: 0.5rem;
+  --size-0rem: 0rem;
+  --size-1rem: 1rem;
+  --size-1-125rem: 1.125rem;
+  --size-1-25rem: 1.25rem;
+  --size-1-5rem: 1.5rem;
+  --size-2rem: 2rem;
+  --size-2-5rem: 2.5rem;
+  --size-3rem: 3rem;
+  --size-3-5rem: 3.5rem;
+  --size-4rem: 4rem;
+  --size-4-5rem: 4.5rem;
+  --size-5rem: 5rem;
+  --size-5-5rem: 5.5rem;
+  --size-6rem: 6rem;
+  --size-6-5rem: 6.5rem;
+  --size-7rem: 7rem;
+  --size-7-5rem: 7.5rem;
+  --size-8rem: 8rem;
+  --size-8-5rem: 8.5rem;
+  --size-9rem: 9rem;
+  --size-9-5rem: 9.5rem;
+  --size-10rem: 10rem;
+  --size-11rem: 11rem;
+  --size-12rem: 12rem;
+  --size-13rem: 13rem;
+  --size-14rem: 14rem;
+  --size-15rem: 15rem;
+  --size-16rem: 16rem;
+}
+/* ==========================================================================
+   RESPONSIVE SIZE ADJUSTMENTS
+   ========================================================================== */
+
+@media screen and (max-width: 991px) {
+  :root {
+    /* Tablet size adjustments */
+    --size-0-125rem: 0.125rem;
+    --size-0-25rem: 0.25rem;
+    --size-0-5rem: 0.5rem;
+    --size-0rem: 0rem;
+    --size-1rem: 1rem;
+    --size-1-125rem: 1.125rem;
+    --size-1-25rem: 1.25rem;
+    --size-1-5rem: 1.5rem;
+    --size-2rem: 1.5rem;
+    --size-2-5rem: 1.75rem;
+    --size-3rem: 2.5rem;
+    --size-3-5rem: 2.73rem;
+    --size-4rem: 3rem;
+    --size-4-5rem: 3.375rem;
+    --size-5rem: 3.75rem;
+    --size-5-5rem: 4.125rem;
+    --size-6rem: 4.5rem;
+    --size-6-5rem: 4.875rem;
+    --size-7rem: 5.25rem;
+    --size-7-5rem: 5.625rem;
+    --size-8rem: 6rem;
+    --size-8-5rem: 6.375rem;
+    --size-9rem: 6.75rem;
+    --size-9-5rem: 7.125rem;
+    --size-10rem: 7.5rem;
+    --size-11rem: 8.25rem;
+    --size-12rem: 9rem;
+    --size-13rem: 9.75rem;
+    --size-14rem: 10.5rem;
+    --size-15rem: 11.25rem;
+    --size-16rem: 12rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    /* Mobile size adjustments */
+    --size-0-125rem: 0.125rem;
+    --size-0-25rem: 0.25rem;
+    --size-0-5rem: 0.5rem;
+    --size-0rem: 0rem;
+    --size-1rem: 1rem;
+    --size-1-125rem: 1.125rem;
+    --size-1-25rem: 1.25rem;
+    --size-1-5rem: 1.5rem;
+    --size-2rem: 1.25rem;
+    --size-2-5rem: 1.35rem;
+    --size-3rem: 1.5rem;
+    --size-3-5rem: 1.75rem;
+    --size-4rem: 2rem;
+    --size-4-5rem: 2.5rem;
+    --size-5rem: 3rem;
+    --size-5-5rem: 3.25rem;
+    --size-6rem: 3.5rem;
+    --size-6-5rem: 3.75rem;
+    --size-7rem: 4rem;
+    --size-7-5rem: 4.125rem;
+    --size-8rem: 4.25rem;
+    --size-8-5rem: 4.5rem;
+    --size-9rem: 5rem;
+    --size-9-5rem: 5.25rem;
+    --size-10rem: 5.5rem;
+    --size-11rem: 5.75rem;
+    --size-12rem: 6rem;
+    --size-13rem: 6.5rem;
+    --size-14rem: 7rem;
+    --size-15rem: 7.5rem;
+    --size-16rem: 8rem;
+  }
+}

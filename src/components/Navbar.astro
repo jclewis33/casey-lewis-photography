@@ -1,0 +1,35 @@
+<!-- adding a class nav-open that will be targeted with Javascript to open the element based on user click We remove it by default, but will be added to javascript-->
+<header class="header">
+  <a href="/">
+    <img
+      class="nav-logo"
+      alt="Casey Lewis Photography Logo"
+      src="src/assets/Casey-Lewis-Photography-Logo.png"
+    />
+  </a>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li><a class="nav-link" href="/about">About</a></li>
+      <li><a class="nav-link" href="/contact">Contact</a></li>
+      <li><a class="nav-link nav-cta" href="/contact">Book a Session</a></li>
+      <li><a class="nav-link nav-cta" href="/style-guide">Style Guide</a></li>
+    </ul>
+  </nav>
+
+  <button class="btn-mobile-nav">
+    <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+    <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+  </button>
+</header>
+
+<script>
+  // Make mobile navigation work
+  const btnNavEl = document.querySelector(".btn-mobile-nav");
+  const headerEl = document.querySelector(".header");
+
+  if (btnNavEl && headerEl) {
+    btnNavEl.addEventListener("click", function () {
+      headerEl.classList.toggle("nav-open");
+    });
+  }
+</script>

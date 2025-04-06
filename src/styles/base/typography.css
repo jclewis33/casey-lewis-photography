@@ -1,0 +1,211 @@
+/* ==========================================================================
+   HEADING STYLES & SEMANTIC TAGS
+   ========================================================================== */
+
+/* Apply heading variables to semantic heading tags */
+h1 {
+  font-size: var(--h1-size);
+  font-family: var(--h1-font-family);
+  line-height: var(--h1-line-height);
+  font-weight: var(--h1-weight);
+}
+
+h2 {
+  font-size: var(--h2-size);
+  font-family: var(--h2-font-family);
+  line-height: var(--h2-line-height);
+  font-weight: var(--h2-weight);
+}
+
+h3 {
+  font-size: var(--h3-size);
+  font-family: var(--h3-font-family);
+  line-height: var(--h3-line-height);
+  font-weight: var(--h3-weight);
+}
+
+h4 {
+  font-size: var(--h4-size);
+  font-family: var(--h4-font-family);
+  line-height: var(--h4-line-height);
+  font-weight: var(--h4-weight);
+}
+
+h5 {
+  font-size: var(--h5-size);
+  font-family: var(--h5-font-family);
+  line-height: var(--h5-line-height);
+  font-weight: var(--h5-weight);
+}
+
+h6 {
+  font-size: var(--h6-size);
+  font-family: var(--h6-font-family);
+  line-height: var(--h6-line-height);
+  font-weight: var(--h6-weight);
+}
+
+/*================== Heading utility classes for non-semantic elements ========================*/
+
+.heading-1 {
+  font-size: var(--h1-size);
+  font-family: var(--h1-font-family);
+  line-height: var(--h1-line-height);
+  font-weight: var(--h1-weight);
+}
+
+.heading-2 {
+  font-size: var(--h2-size);
+  font-family: var(--h2-font-family);
+  line-height: var(--h2-line-height);
+  font-weight: var(--h2-weight);
+}
+
+.heading-3 {
+  font-size: var(--h3-size);
+  font-family: var(--h3-font-family);
+  line-height: var(--h3-line-height);
+  font-weight: var(--h3-weight);
+}
+
+.heading-4 {
+  font-size: var(--h4-size);
+  font-family: var(--h4-font-family);
+  line-height: var(--h4-line-height);
+  font-weight: var(--h4-weight);
+}
+
+.heading-5 {
+  font-size: var(--h5-size);
+  font-family: var(--h5-font-family);
+  line-height: var(--h5-line-height);
+  font-weight: var(--h5-weight);
+}
+
+.heading-6 {
+  font-size: var(--h6-size);
+  font-family: var(--h6-font-family);
+  line-height: var(--h6-line-height);
+  font-weight: var(--h6-weight);
+}
+
+/*============= Display heading styles - for extra large, impactful headings ===============*/
+
+.display-xl {
+  font-size: var(--display-xl-size);
+  font-family: var(--display-xl-font-family);
+  line-height: var(--display-xl-line-height);
+  font-weight: var(--display-xl-weight);
+}
+
+.display-lg {
+  font-size: var(--display-lg-size);
+  font-family: var(--display-lg-font-family);
+  line-height: var(--display-lg-line-height);
+  font-weight: var(--display-lg-weight);
+}
+
+.display-md {
+  font-size: var(--display-md-size);
+  font-family: var(--display-md-font-family);
+  line-height: var(--display-md-line-height);
+  font-weight: var(--display-md-weight);
+}
+
+.display-sm {
+  font-size: var(--display-sm-size);
+  font-family: var(--display-sm-font-family);
+  line-height: var(--display-sm-line-height);
+  font-weight: var(--display-sm-weight);
+}
+
+/* ==========================================================================
+       TEXT SIZES
+     ========================================================================== */
+
+.text-size-tiny {
+  font-family: var(--text-tiny-font-family);
+  font-size: var(--text-tiny-size);
+  line-height: var(--text-tiny-line-height);
+  font-weight: var(--text-tiny-weight);
+  text-wrap: pretty;
+  text-transform: var(--text-tiny-text-transform);
+}
+
+.text-size-small {
+  font-family: var(--text-small-font-family);
+  font-size: var(--text-small-size);
+  line-height: var(--text-small-line-height);
+  font-weight: var(--text-small-weight);
+  text-wrap: pretty;
+  text-transform: var(--text-small-text-transform);
+}
+
+.text-size-regular {
+  font-family: var(--text-regular-font-family);
+  font-size: var(--text-regular-size);
+  line-height: var(--text-regular-line-height);
+  font-weight: var(--text-regular-weight);
+  text-wrap: pretty;
+  text-transform: var(--text-regular-text-transform);
+}
+
+.text-size-medium {
+  font-family: var(--text-medium-font-family);
+  font-size: var(--text-medium-size);
+  line-height: var(--text-medium-line-height);
+  font-weight: var(--text-medium-weight);
+  text-wrap: pretty;
+  text-transform: var(--text-medium-text-transform);
+}
+
+.text-size-large {
+  font-family: var(--text-large-font-family);
+  font-size: var(--text-large-size);
+  line-height: var(--text-large-line-height);
+  font-weight: var(--text-large-weight);
+  text-wrap: pretty;
+  text-transform: var(--text-large-text-transform);
+}
+
+.text-size-xlarge {
+  font-family: var(--text-xlarge-font-family);
+  font-size: var(--text-xlarge-size);
+  line-height: var(--text-xlarge-line-height);
+  font-weight: var(--text-xlarge-weight);
+  text-wrap: pretty;
+  text-transform: var(--text-xlarge-text-transform);
+}
+
+/* ==========================================================================
+   PARAGRAPH STYLES
+   ========================================================================== */
+/* Base Paragraph Styles */
+
+p {
+  margin-bottom: 1rem;
+  font-family: var(--text-regular-font-family);
+  font-size: var(--text-regular-size);
+  line-height: var(--text-regular-line-height);
+  font-weight: var(--text-regular-weight);
+}
+
+/* Remove bottom margin from last paragraphs in containers */
+p:last-child {
+  margin-bottom: var(--paragraph-spacing-last-child);
+}
+
+/* ==========================================================================
+   LINK STYLES
+   ========================================================================== */
+
+/* For links that have classes (most will) */
+a {
+  color: var(--color-brand-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-brand-blue-faded);
+}

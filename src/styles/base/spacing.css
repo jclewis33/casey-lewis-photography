@@ -1,0 +1,67 @@
+/* ==========================================================================
+     VERTICAL PADDING UTILITIES
+   ========================================================================== */
+
+/* Standard vertical padding - padding for most sections */
+.padding-y-sitewide {
+  padding-top: var(--padding-large);
+  padding-bottom: var(--padding-large);
+}
+
+/* Large vertical padding - for major sections */
+.padding-y-large {
+  padding-top: var(--padding-large);
+  padding-bottom: var(--padding-large);
+}
+
+/* Medium vertical padding - for standard sections */
+.padding-y-medium {
+  padding-top: var(--padding-medium);
+  padding-bottom: var(--padding-medium);
+}
+
+/* Small vertical padding - for compact sections */
+.padding-y-small {
+  padding-top: var(--padding-small);
+  padding-bottom: var(--padding-small);
+}
+
+/* Uneven vertical padding utilities */
+
+.padding-y-large-top {
+  padding-top: var(--padding-large);
+}
+
+.padding-y-large-bottom {
+  padding-bottom: var(--padding-large);
+}
+
+.padding-y-medium-top {
+  padding-top: var(--padding-medium);
+}
+
+.padding-y-medium-bottom {
+  padding-bottom: var(--padding-medium);
+}
+
+.padding-y-small-top {
+  padding-top: var(--padding-small);
+}
+
+.padding-y-small-bottom {
+  padding-bottom: var(--padding-small);
+}
+
+/* Remove padding utilities */
+.padding-y-none {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.padding-top-none {
+  padding-top: 0;
+}
+
+.padding-bottom-none {
+  padding-bottom: 0;
+}

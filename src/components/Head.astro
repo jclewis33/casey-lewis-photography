@@ -1,0 +1,73 @@
+---
+// src/components/Head.astro
+
+// Destructure props with default values.
+// These can be overridden on a per-page basis.
+const {
+  title = "Professional Photographer Red Oak & Waxahachie TX",
+  description = "Casey Lewis Photography for all your family, professional headshots, portrait, and real estate photography needs. I look forward to working with you!",
+  ogImage = "https://uploads-ssl.webflow.com/6255f941c2bbb613a84ec911/625b891e3ec675f46dddb5c1_Open%20Graph%20Image%400.75x.jpg",
+  canonical = "https://www.caseylewisphotography.com",
+  twitterTitle = title,
+  twitterDescription = description,
+  twitterImage = ogImage,
+} = Astro.props;
+---
+
+<!-- Character Encoding -->
+<meta charset="UTF-8" />
+
+<!-- Ensure proper scaling on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Favicon and Apple Touch Icon -->
+<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="apple-touch-icon" href="/images/webclip.png" />
+
+<!-- Canonical URL: only rendered if provided -->
+{canonical && <link rel="canonical" href={canonical} />}
+
+<!-- Page Title and Meta Description for SEO -->
+<title>{title}</title>
+<meta name="description" content={description} />
+
+<!-- Open Graph Meta Tags for social sharing (e.g., Facebook, LinkedIn) -->
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:type" content="website" />
+{canonical && <meta property="og:url" content={canonical} />}
+<meta property="og:image" content={ogImage} />
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content={twitterTitle} />
+<meta property="twitter:description" content={twitterDescription} />
+<meta property="twitter:image" content={twitterImage} />
+
+<!-- Preconnect to Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin="anonymous"
+/>
+
+<!-- Load the desired Google Fonts stylesheet -->
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Ionicons and smoothscroll-polyfill scripts -->
+<script
+  defer
+  type="module"
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script
+  defer
+  nomodule
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script
+  defer
+  src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+></script>

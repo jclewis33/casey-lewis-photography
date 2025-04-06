@@ -1,0 +1,228 @@
+/* ==========================================================================
+     CONTAINER CLASS
+   ========================================================================== */
+
+.container {
+  width: 100%;
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--padding-global);
+  padding-right: var(--padding-global);
+}
+
+/* ==========================================================================
+       FLEXBOX UTILITIES
+   ========================================================================== */
+
+.d-flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+/* ==========================================================================
+       GRID UTILITIES
+   ========================================================================== */
+
+.grid-1 {
+  column-gap: var(--grid-gap-standard);
+  row-gap: var(--grid-gap-standard);
+  grid-template-rows: auto;
+  grid-auto-columns: 1fr;
+  grid-template-columns: var(--grid-1);
+  display: grid;
+}
+
+.grid-2 {
+  column-gap: var(--grid-gap-standard);
+  row-gap: var(--grid-gap-standard);
+  grid-template-rows: auto;
+  grid-auto-columns: 1fr;
+  grid-template-columns: var(--grid-2);
+  display: grid;
+}
+
+.grid-3 {
+  column-gap: var(--grid-gap-standard);
+  row-gap: var(--grid-gap-standard);
+  grid-template-rows: auto;
+  grid-auto-columns: 1fr;
+  grid-template-columns: var(--grid-3);
+  display: grid;
+}
+
+.grid-4 {
+  column-gap: var(--grid-gap-standard);
+  row-gap: var(--grid-gap-standard);
+  grid-template-rows: auto;
+  grid-auto-columns: 1fr;
+  grid-template-columns: var(--grid-4);
+  display: grid;
+}
+
+/* Mobile iPad */
+@media screen and (max-width: 991px) {
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: var(--grid-1);
+  }
+}
+
+/* ==========================================================================
+       DISPLAY UTILITIES
+   ========================================================================= */
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+/* ==========================================================================
+       VISIBILITY UTILITIES
+   ========================================================================== */
+
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+/* ==========================================================================
+       DIMENSION UTILITIES
+   ========================================================================== */
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+/* ==========================================================================
+       HIDE UTILITIES
+   ========================================================================== */
+
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+
+/* Hide on specific screen sizes */
+@media screen and (max-width: 767px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hide-on-tablet {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hide-on-desktop {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+         Overflow Utilities
+   ========================================================================== */
+
+.overflow-auto {
+  overflow: auto;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-visible {
+  overflow: visible;
+}
+.overflow-scroll {
+  overflow: scroll;
+}
+
+/* ==========================================================================
+         Z-Index Utilities
+   ========================================================================== */
+
+.z-index-1 {
+  z-index: 1;
+  position: relative;
+}
+.z-index-2 {
+  z-index: 2;
+  position: relative;
+}
+
+/* ==========================================================================
+         Aspect Ratio Utilities
+   ========================================================================== */
+
+.aspect-ratio-portrait {
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+.aspect-ratio-landscape {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+.aspect-ratio-widescreen {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.aspect-ratio-square {
+  aspect-ratio: 1;
+  object-fit: cover;
+}

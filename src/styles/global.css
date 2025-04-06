@@ -1,0 +1,27 @@
+/* ==========================================================================
+   GLOBAL CSS
+   Imports all CSS modules in the correct order
+   ========================================================================== */
+
+/* Base reset */
+@import "./reset.css";
+
+/* Variables */
+@import "./variables/typography.css";
+@import "./variables/colors.css";
+@import "./variables/spacing.css";
+@import "./variables/layout.css";
+@import "./variables/borders.css";
+@import "./variables/buttons.css";
+
+/* Base styles */
+@import "./base/typography.css";
+@import "./base/text-utilities.css";
+@import "./base/layout.css";
+@import "./base/buttons.css";
+@import "./base/spacing.css";
+@import "./base/visual-utilities.css";
+@import "./base/utilities.css";
+
+/* Component styles can be imported here or loaded separately in your application */
+/* @import './components/ComponentName/ComponentName.css'; */

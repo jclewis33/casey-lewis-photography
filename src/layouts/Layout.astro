@@ -1,22 +1,29 @@
+---
+import Head from "../components/Head.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import "../../src/styles/global.css";
+
+//Destructure the meta props that each page may pass
+const { title, description, canonical } = Astro.props;
+
+//Pass custom props if needed. This is for reference, default props will be passed from the head component.
+//const title = "Custom Page Title | Casey Lewis Photography";
+//const description = "A custom description for this page.";
+//const canonical = "https://www.caseylewisphotography.com/custom-page";
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <Head title={title} description={description} canonical={canonical} />
+  </head>
+  <body>
+    <!--Navbar appears at the top of every page -->
+    <Navbar />
+    <!--Rest of page content -->
+    <slot />
+    <!--Footer appears at the bottom of every page -->
+    <Footer />
+  </body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
