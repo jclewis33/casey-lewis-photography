@@ -23,5 +23,7 @@
 @import "./base/visual-utilities.css";
 @import "./base/utilities.css";
 
-/* Component styles can be imported here or loaded separately in your application */
+/* Components */
+@import "./components/footer.css";
+@import "./components/navbar.css"; /* Component styles can be imported here or loaded separately in your application */
 /* @import './components/ComponentName/ComponentName.css'; */
