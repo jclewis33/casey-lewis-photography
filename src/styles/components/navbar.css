@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fdf2e9;
+  background-color: var(--color-neutral-darkest);
 
   /* set header (navigation) to a fixed height. Setting it to fix height so we can make it sticky */
   height: 6rem;
@@ -15,7 +15,7 @@
 }
 
 .nav-logo {
-  width: 15rem;
+  width: 10rem;
 }
 
 /* ***************************** */
@@ -37,7 +37,7 @@
 .nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #333;
+  color: var(--theme-text-dark);
   font-weight: 500;
   font-size: 1rem;
   transition: all 0.3s;
@@ -45,7 +45,7 @@
 
 .nav-link:hover,
 .nav-link:active {
-  color: #cf711f;
+  color: var(--color-neutral-lighter);
 }
 
 /* Nav CTA Button */
@@ -75,9 +75,9 @@
 }
 
 .icon-mobile-nav {
-  height: 4rem;
-  width: 4rem;
-  color: #333;
+  height: 2rem;
+  width: 2rem;
+  color: var(--theme-text-dark);
 }
 /* the button to hide initially based on attributes instead of creating a completely different class */
 .icon-mobile-nav[name="close-outline"] {
@@ -133,7 +133,7 @@
 
   /* positioning in relation to the entire view point, so don't need to make the header relative */
   .navbar {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--theme-background--dark-2);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(5px);
     position: absolute;
@@ -162,6 +162,7 @@
 
     /* 3) Hide it from screen readers */
     visibility: hidden;
+    z-index: 999;
   }
 
   /* when we open nav, we must reset all the steps from above */
@@ -183,11 +184,11 @@
 
   .nav-list {
     flex-direction: column;
-    gap: 3rem;
+    gap: 1.5rem;
   }
 
   .nav-link:link,
   .nav-link:visited {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }

@@ -1,26 +1,26 @@
 /* ==========================================================================
-6. BUTTONS
+BUTTONS
 ========================================================================== */
 :root {
   /*==================  Primary Button Styles *========================*/
 
   /* Primary default button border color */
-  --button-border: var(--color-brand-blue);
+  --button-border: var(--color-neutral-white-off);
 
   /* Primary default button background color */
-  --button-background: var(--color-brand-blue);
+  --button-background: transparent;
 
   /* Primary default button text color */
-  --button-text: var(--color-neutral-white);
+  --button-text: var(--theme-text-dark);
 
   /* Primary button border color on hover */
-  --button-border-hover: var(--color-brand-blue);
+  --button-border-hover: var(--color-neutral-white);
 
   /* Primary button background color on hover */
-  --button-background-hover: var(--color-brand-blue-faded);
+  --button-background-hover: var(--color-neutral-white);
 
   /* Primary button text color on hover */
-  --button-text-hover: var(--color-neutral-white);
+  --button-text-hover: var(--theme-text-alternate);
 
   /*==================  Secondary Button Styles ========================*/
 

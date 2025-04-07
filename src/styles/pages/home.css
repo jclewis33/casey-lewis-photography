@@ -1,0 +1,9 @@
+.home-hero__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.home-hero.button-wrapper {
+  margin-top: 1rem;
+}

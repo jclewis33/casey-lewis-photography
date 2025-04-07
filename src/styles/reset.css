@@ -38,7 +38,7 @@ body {
   line-height: 1.5;
   font-family: var(--font-primary);
   color: var(--theme-text-dark);
-  background-color: var(--theme-background-light);
+  background-color: var(--theme-background--dark);
   text-transform: var(--_text-style---text-transform);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

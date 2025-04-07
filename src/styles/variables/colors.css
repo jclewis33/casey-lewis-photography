@@ -8,12 +8,12 @@
   --color-brand-blue-faded: #2d62ffcc;
   --color-brand-blue-dark: #080331;
   --color-brand-white-faded: #ffffffbf;
-  --color-brand-black-faded: #000000bf;
+  --color-brand-black-faded: #151515;
 
   /*================== Neutral Colors ========================*/
 
   --color-neutral-black: #000;
-  --color-neutral-white: #fff;
+  --color-neutral-white: #f8f8f8;
   --color-neutral-white-off: #fcfcfc;
   --color-neutral-lighter: #ccc;
   --color-neutral-light: #aaa;
@@ -39,7 +39,9 @@
   --theme-background--dark: var(--color-neutral-darker);
   --theme-background--dark-2: var(--color-neutral-darkest);
 
-  --theme-text-dark: var(--color-neutral-black-off);
+  --theme-text-dark: var(--color-neutral-white-off);
+
+  --theme-text-alternate: var(--color-neutral-darkest);
 
   /*================== Gradients ========================*/
 
