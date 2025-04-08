@@ -21,9 +21,11 @@ const { title, description, canonical } = Astro.props;
   <body>
     <!--Navbar appears at the top of every page -->
     <Navbar />
-    <!--Rest of page content -->
-    <slot />
-    <!--Footer appears at the bottom of every page -->
+    <main>
+      <!--Rest of page content -->
+      <slot />
+      <!--Footer appears at the bottom of every page -->
+    </main>
     <Footer />
   </body>
 </html>

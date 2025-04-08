@@ -1,39 +1,51 @@
 ---
-
+import Image from "astro/components/Image.astro";
+import footerLogo from "../assets/Casey-Lewis-Photography-Logo-p-500.png";
 ---
 
-<footer class="footer">
+<footer class="footer padding-vertical-sitewide">
   <div class="container">
-    <div class="footer-grid">
+    <div class="footer-grid grid-3">
       <div class="footer-logo-wrapper">
-        <a href="index.html" aria-current="page" class="logo-link">
-          <img
-            src="../assets/Casey-Lewis-Photography-Logo.png"
+        <a href="/" aria-current="page" class="logo-link">
+          <Image
+            src={footerLogo}
             loading="lazy"
             sizes="(max-width: 600px) 100vw, 600px"
-            srcset="
-                ../assets/Casey-Lewis-Photography-Logo-p-500.png 500w,
-                ../assets/Casey-Lewis-Photography-Logo.png 600w
-              "
             alt="Casey Lewis Photography logo"
             class="logo-image"
           />
         </a>
-        <p class="company-info">
-          Casey Lewis is a portrait, headshot, and real estate photographer
-          located in Red Oak, TX.
-        </p>
       </div>
 
       <nav class="footer-nav">
         <a href="/" aria-current="page" class="footer-nav-item">Home</a>
         <a href="/about" class="footer-nav-item">About</a>
+        <a href="/contact" class="footer-nav-item">Contact</a>
       </nav>
-      <a href="/contact" class="footer-nav-item">Contact</a>
-    </div>
-
-    <div class="footer-contact">
-      <div class="social-media">
+      <div class="footer-contact">
+        <div class="contact-email">
+          <img
+            src="../assets/Email-Icon.svg"
+            loading="lazy"
+            alt="Email Icon"
+            class="contact-icon"
+          />
+          <a
+            href="mailto:casey@caseylewisphotography.com?subject=Photography%20Services"
+            class="contact-link"
+          >
+          </a>
+        </div>
+        <div class="contact-phone">
+          <img
+            src="../assets/Phone-Icon.svg"
+            loading="lazy"
+            alt="Phone Icon"
+            class="contact-icon"
+          />
+          <a href="tel:7063386155" class="contact-link"> </a>
+        </div>
         <a
           href="https://www.facebook.com/caseylewisphotography"
           target="_blank"
@@ -58,31 +70,6 @@
             class="social-media-icon"
           />
         </a>
-      </div>
-      <div class="contact-links">
-        <div class="contact-email">
-          <img
-            src="../assets/Email-Icon.svg"
-            loading="lazy"
-            alt="Email Icon"
-            class="contact-icon"
-          />
-          <a
-            href="mailto:casey@caseylewisphotography.com?subject=Photography%20Services"
-            class="contact-link"
-          >
-            Email Me
-          </a>
-        </div>
-        <div class="contact-phone">
-          <img
-            src="../assets/Phone-Icon.svg"
-            loading="lazy"
-            alt="Phone Icon"
-            class="contact-icon"
-          />
-          <a href="tel:7063386155" class="contact-link"> (706) 338-6155 </a>
-        </div>
       </div>
     </div>
   </div>

@@ -15,7 +15,7 @@
 }
 
 .nav-logo {
-  width: 10rem;
+  height: 6rem;
 }
 
 /* ***************************** */
@@ -115,7 +115,7 @@
   }
 
   .nav-list {
-    gap: 2rem;
+    gap: 1.5rem;
   }
 }
 
@@ -149,6 +149,7 @@
 
     /* using ease-in, which is the third value that you can specify in transitions */
     transition: all 0.5s ease-in;
+    /* transition: none; */
 
     /* Hide navigation */
     /* display none allows no transitions at all, so we will find another way */
@@ -171,6 +172,7 @@
     pointer-events: auto;
     visibility: visible;
     transform: translateX(0%);
+    /* transition: transform 0.5s ease-in, opacity 0.5s ease-in; */
   }
   /* make the close icon visible - We use display because we don't need an animation to for this icon We add .nav-open so that only when this selector exist it will show*/
   .nav-open .icon-mobile-nav[name="close-outline"] {

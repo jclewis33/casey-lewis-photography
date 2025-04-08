@@ -1,6 +1,8 @@
 ---
+import Image from "astro/components/Image.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/pages/home.css";
+import portraitOfCasey from "../assets/Casey-Owner-Casey-Lewis-Photography_1.webp";
 ---
 
 <BaseLayout>
@@ -18,6 +20,13 @@ import "../styles/pages/home.css";
           <div class="home-hero button-wrapper">
             <button class="button">Book a Session</button>
           </div>
+        </div>
+        <div class="home-hero__image-wrapper">
+          <Image
+            src={portraitOfCasey}
+            alt="portrait of casey owner of casey lewis photography"
+            class="home-hero__image"
+          />
         </div>
       </div>
     </div>
