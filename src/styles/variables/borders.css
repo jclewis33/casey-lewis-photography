@@ -38,7 +38,7 @@
   /* Special-purpose radii */
 
   /* Default radius for most elements */
-  --radius-main: 6px;
+  --radius-main: 12px;
 
   /* Fully rounded (circle/pill) */
   --radius-full: 100vw;

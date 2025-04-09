@@ -4,10 +4,7 @@
 :root {
   /*================== Brand Colors ========================*/
 
-  --color-brand-blue: #2d62ff;
-  --color-brand-blue-faded: #2d62ffcc;
-  --color-brand-blue-dark: #080331;
-  --color-brand-white-faded: #ffffffbf;
+  --color-brand-white-faded: hsla(0, 0%, 100%, 0.65);
   --color-brand-black-faded: #151515;
 
   /*================== Neutral Colors ========================*/
@@ -40,6 +37,7 @@
   --theme-background--dark-2: var(--color-neutral-darkest);
 
   --theme-text-dark: var(--color-neutral-white-off);
+  --theme-text-dark-faded: var(--color-brand-white-faded);
 
   --theme-text-alternate: var(--color-neutral-darkest);
 

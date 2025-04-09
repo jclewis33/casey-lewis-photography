@@ -16,6 +16,9 @@
 
 .nav-logo {
   height: 6rem;
+  width: 100%;
+  filter: invert();
+  filter: brightness(100);
 }
 
 /* ***************************** */

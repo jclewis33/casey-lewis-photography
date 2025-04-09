@@ -1,10 +1,15 @@
+---
+import Image from "astro/components/Image.astro";
+import caseyLewisPhotographyLogo from "../assets/casey-lewis-photography-logo.png";
+---
+
 <!-- adding a class nav-open that will be targeted with Javascript to open the element based on user click We remove it by default, but will be added to javascript-->
 <header class="header">
   <a href="/">
-    <img
+    <Image
       class="nav-logo"
       alt="Casey Lewis Photography Logo"
-      src="../assets/Casey-Lewis-Photography-Logo.png"
+      src={caseyLewisPhotographyLogo}
     />
   </a>
   <nav class="navbar">

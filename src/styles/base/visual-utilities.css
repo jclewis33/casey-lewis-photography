@@ -1,5 +1,5 @@
 /* ==========================================================================
-       Background Color Utilities
+       BACKGROUND COLOR UTILITIES
    ========================================================================== */
 
 .background-color-primary {
@@ -66,4 +66,193 @@ u-gradient-1 {
     var(--_theme---gradient-2--start-color) 0%,
     var(--_theme---gradient-2--end-color) 100%
   );
+}
+
+/* ==========================================================================
+       DISPLAY UTILITIES
+   ========================================================================= */
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+/* ==========================================================================
+         VISIBILITY UTILITIES
+     ========================================================================== */
+
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+/* ==========================================================================
+         HIDE UTILITIES
+     ========================================================================== */
+
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+
+/* Hide on specific screen sizes */
+@media screen and (max-width: 767px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hide-on-tablet {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hide-on-desktop {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+           OVERFLOW UTILITIES
+     ========================================================================== */
+
+.overflow-auto {
+  overflow: auto;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-visible {
+  overflow: visible;
+}
+.overflow-scroll {
+  overflow: scroll;
+}
+
+/* ==========================================================================
+         DIMENSION UTILITIES
+     ========================================================================== */
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+/* ==========================================================================
+           Z-INDEX UTILITIES
+     ========================================================================== */
+
+.z-index-1 {
+  z-index: 1;
+  position: relative;
+}
+.z-index-2 {
+  z-index: 2;
+  position: relative;
+}
+
+/* ==========================================================================
+         RADIUS UTILITIES
+   ========================================================================== 
+  apply as classes when wanting to change the radius. Pair with an overflow class ex: .overflow-hidden */
+
+/* Standard radius values */
+.radius-none {
+  border-radius: var(--radius-none);
+}
+
+.radius-xsmall {
+  border-radius: var(--radius-xsmall);
+}
+
+.radius-small {
+  border-radius: var(--radius-small);
+}
+
+.radius-medium {
+  border-radius: var(--radius-medium);
+}
+
+.radius-large {
+  border-radius: var(--radius-large);
+}
+
+.radius-xlarge {
+  border-radius: var(--radius-xlarge);
+}
+
+/* Special-purpose radii */
+/* Default radius for most elements */
+.radius-main {
+  border-radius: var(--radius-main);
+}
+
+/* Fully rounded (circle or pill shape) */
+.radius-full {
+  border-radius: var(--radius-full);
+}
+
+/* Responsive section radius */
+.radius-section {
+  border-radius: var(--radius-section);
+}
+
+/* ==========================================================================
+         ASPECT RATIO UTILITIES
+   ========================================================================== */
+
+.aspect-ratio-portrait {
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+.aspect-ratio-landscape {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+.aspect-ratio-widescreen {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.aspect-ratio-square {
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+             IMAGE UTILTIES
+   ========================================================================== */
+
+.u-visual-wrap {
+  position: relative;
+  aspect-ratio: 2/3;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-main);
+}
+
+.u-visual {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
