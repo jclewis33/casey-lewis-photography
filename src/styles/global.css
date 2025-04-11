@@ -15,13 +15,13 @@
 @import "./variables/buttons.css";
 
 /* Base styles */
+@import "./base/utilities.css";
 @import "./base/typography.css";
 @import "./base/text-utilities.css";
 @import "./base/layout.css";
 @import "./base/buttons.css";
 @import "./base/spacing.css";
 @import "./base/visual-utilities.css";
-@import "./base/utilities.css";
 
 /* Components */
 @import "./components/footer.css";

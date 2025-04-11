@@ -2,30 +2,69 @@
 import Image from "astro/components/Image.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/pages/home.css";
-import portraitOfCasey from "../assets/casey-lewis-owner-casey-lewis-photography.webp";
+import portraitOfCasey from "../assets/casey-lewis-owner-casey-lewis-photography.avif";
+import homeHero1 from "../assets/home-hero-1.avif";
+import homeHero2 from "../assets/home-hero-2.avif";
+import homeHero3 from "../assets/home-hero-3.avif";
+import homeHero4 from "../assets/home-hero-4.avif";
+import homeHero5 from "../assets/home-hero-5.avif";
+import homeHero6 from "../assets/home-hero-6.avif";
 ---
 
 <BaseLayout>
   <section class="home-hero padding-vertical-sitewide">
     <div class="container">
-      <div class="home-hero__component grid-2">
+      <div
+        class="home-hero__component display-flex flex-column align-items-center text-center"
+      >
         <div class="home-hero__content-wrapper">
-          <h1 class="home-hero__heading heading-1">
-            Dallas Headshot Photographer
+          <h1 class="home-hero__eyebrow eyebrow">
+            Headshot and Commercial Photography
           </h1>
+          <h2>
+            Enhance Your Image, Attract More Customers, Showcase Your Business
+          </h2>
+
           <p class="home-hero__paragraph">
-            Professional Headshots that capture your best self. Stand out in
-            Dallas with headshots that elevate your personal brand.
+            Specializing in headshot, commercial, and real estate photography
+            across Red Oak, Midlothian, Waxahachie, Dallas, and the entire DFW
+            Metroplex.
           </p>
-          <div class="home-hero button-wrapper">
-            <button class="button">Book a Session</button>
+          <div class="home-hero button-wrapper-group">
+            <a href="/contact" class="button">Book a Session</a>
+            <a href="/about" class="button is-secondary">Learn More</a>
           </div>
         </div>
-        <div class="home-hero__image-wrapper">
+        <div class="home-hero__image-grid">
           <Image
-            src={portraitOfCasey}
-            alt="portrait of casey owner of casey lewis photography"
-            class="home-hero__image"
+            src={homeHero1}
+            alt="home hero grid"
+            class="home-hero__image-1"
+          />
+          <Image
+            src={homeHero2}
+            alt="home hero grid"
+            class="home-hero__image-2"
+          />
+          <Image
+            src={homeHero3}
+            alt="home hero grid"
+            class="home-hero__image-3"
+          />
+          <Image
+            src={homeHero4}
+            alt="home hero grid"
+            class="home-hero__image-4"
+          />
+          <Image
+            src={homeHero5}
+            alt="home hero grid"
+            class="home-hero__image-5"
+          />
+          <Image
+            src={homeHero6}
+            alt="home hero grid"
+            class="home-hero__image-6"
           />
         </div>
       </div>

@@ -1,25 +1,33 @@
-/* left content wrapper */
+/* hero component */
+
+.home-hero__component {
+  grid-gap: var(--grid-gap-standard);
+}
+
+/* content wrapper */
 
 .home-hero__content-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1.5rem;
+  max-width: 65ch;
 }
 
-.home-hero.button-wrapper {
-  margin-top: 1rem;
+.home-hero.button-wrapper-group {
+  width: 100%;
+  justify-content: center;
 }
 
 /* right image wrapper */
 
-.home-hero__image-wrapper {
+.home-hero__image-grid {
   position: relative;
-  aspect-ratio: 3/4;
   overflow: hidden;
   width: 100%;
   height: auto;
-  border-radius: 16px;
+  display: flex;
+  gap: 0.25rem;
 }
 
 .home-hero__image {

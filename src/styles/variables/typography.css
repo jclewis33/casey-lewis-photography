@@ -97,6 +97,13 @@ Calculator settings:
   --h6-line-height: 1.4;
   --h6-weight: 700;
 
+  /* Eyebrow - Text that Appears on Top */
+  --eyebrow-size: 1.125rem;
+  --eyebrow-font-family: var(--font-primary);
+  --eyebrow-line-height: 1.4;
+  --eyebrow-weight: 700;
+  --eyebrow-text-transform: var(--text-transform-uppercase);
+
   /* Secondary Headings */
   --h1-size-secondary: clamp(2.75rem, 2.825vw + 2.088rem, 4.5rem);
   --h2-size-secondary: clamp(2.5rem, 2.422vw + 1.932rem, 4rem);

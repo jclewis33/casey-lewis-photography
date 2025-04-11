@@ -89,6 +89,14 @@ h6 {
   font-weight: var(--h6-weight);
 }
 
+.eyebrow {
+  font-size: var(--eyebrow-size);
+  font-family: var(--eyebrow-font-family);
+  line-height: var(--eyebrow-line-height);
+  font-weight: var(--eyebrow-weight);
+  text-transform: var(--eyebrow-text-transform);
+}
+
 /*============= Display heading styles - for extra large, impactful headings ===============*/
 
 .display-xl {

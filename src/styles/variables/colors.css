@@ -39,7 +39,7 @@
   --theme-text-dark: var(--color-neutral-white-off);
   --theme-text-dark-faded: var(--color-brand-white-faded);
 
-  --theme-text-alternate: var(--color-neutral-darkest);
+  --theme-text-alternate: var(--color-neutral-black);
 
   /*================== Gradients ========================*/
 
