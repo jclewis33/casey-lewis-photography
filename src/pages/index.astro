@@ -9,6 +9,7 @@ import homeHero3 from "../assets/home-hero-3.avif";
 import homeHero4 from "../assets/home-hero-4.avif";
 import homeHero5 from "../assets/home-hero-5.avif";
 import homeHero6 from "../assets/home-hero-6.avif";
+import homeHero7 from "../assets/home-hero-7.avif";
 ---
 
 <BaseLayout>
@@ -35,39 +36,62 @@ import homeHero6 from "../assets/home-hero-6.avif";
             <a href="/about" class="button is-secondary">Learn More</a>
           </div>
         </div>
-        <div class="home-hero__image-grid">
-          <Image
-            src={homeHero1}
-            alt="home hero grid"
-            class="home-hero__image-1"
-          />
-          <Image
-            src={homeHero2}
-            alt="home hero grid"
-            class="home-hero__image-2"
-          />
-          <Image
-            src={homeHero3}
-            alt="home hero grid"
-            class="home-hero__image-3"
-          />
-          <Image
-            src={homeHero4}
-            alt="home hero grid"
-            class="home-hero__image-4"
-          />
-          <Image
-            src={homeHero5}
-            alt="home hero grid"
-            class="home-hero__image-5"
-          />
-          <Image
-            src={homeHero6}
-            alt="home hero grid"
-            class="home-hero__image-6"
-          />
-        </div>
       </div>
+    </div>
+    <div class="home-hero__image-grid">
+      <Image
+        src={homeHero1}
+        alt="home hero grid"
+        class="home-hero__image is-1"
+        width={homeHero1.width}
+        height={homeHero1.height}
+      />
+      <div class="home-hero__stacked-image-wrapper">
+        <Image
+          src={homeHero2}
+          alt="home hero grid"
+          class="home-hero__image is-2"
+          width={homeHero2.width}
+          height={homeHero2.height}
+        />
+        <Image
+          src={homeHero3}
+          alt="home hero grid"
+          class="home-hero__image is-3"
+          width={homeHero3.width}
+          height={homeHero3.height}
+        />
+      </div>
+      <Image
+        src={homeHero4}
+        alt="home hero grid"
+        class="home-hero__image is-4"
+        width={homeHero4.width}
+        height={homeHero4.height}
+      />
+      <div class="home-hero__stacked-image-wrapper">
+        <Image
+          src={homeHero5}
+          alt="home hero grid"
+          class="home-hero__image is-5"
+          width={homeHero5.width}
+          height={homeHero5.height}
+        />
+        <Image
+          src={homeHero6}
+          alt="home hero grid"
+          class="home-hero__image is-6"
+          width={homeHero6.width}
+          height={homeHero6.height}
+        />
+      </div>
+      <Image
+        src={homeHero7}
+        alt="home hero grid"
+        class="home-hero__image is-7"
+        width={homeHero7.width}
+        height={homeHero7.height}
+      />
     </div>
   </section>
 </BaseLayout>

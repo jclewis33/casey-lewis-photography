@@ -88,5 +88,16 @@ ol[role="list"] {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
-  color: var(--color-brand-blue);
+  color: var(---color-focus-state);
+}
+
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: var(--focus-width) solid var(--color-focus-state);
+  outline-offset: var(--focus-offset-outer);
+  border-radius: var(--radius-small);
 }

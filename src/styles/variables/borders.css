@@ -20,7 +20,7 @@
   --border-color-dark: var(--color-neutral-darker);
 
   /* Brand-colored borders for emphasis */
-  --border-color-brand: var(--color-brand-blue);
+  --border-color-brand: var(--color-brand-grey);
 
   /* ==========================================================================
        BORDER RADIUS
