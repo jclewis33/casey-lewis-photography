@@ -17,8 +17,8 @@
   --color-neutral-light: #aaa;
   --color-neutral-medium: #666;
   --color-neutral-dark: #444;
-  --color-neutral-darker: #222;
-  --color-neutral-darkest: #111;
+  --color-neutral-darker: #111;
+  --color-neutral-darkest: #222;
   --color-neutral-black-off: #0e0e0e;
 
   /*================== System Colors ========================*/
@@ -29,13 +29,20 @@
   --color-warning-yellow-dark: #5e5515;
   --color-error-red: #f8e4e4;
   --color-error-red-dark: #3b0b0b;
+
+  /* Color Focus State for tabbing through website. See reset for how this is applied website wide */
+
   --color-focus-state: #2d62ff;
 
   /*================== Theme Colors ========================*/
 
+  /* Background */
+
   --theme-background-light: var(--color-neutral-white-off);
   --theme-background--dark: var(--color-neutral-darker);
   --theme-background--dark-2: var(--color-neutral-darkest);
+
+  /* Text */
 
   --theme-text-dark: var(--color-neutral-white-off);
   --theme-text-dark-faded: var(--color-brand-white-faded);
