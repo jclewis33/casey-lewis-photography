@@ -4,7 +4,6 @@
 
 .home-hero__component {
   grid-gap: var(--grid-gap-standard);
-  margin-bottom: var(--size-4rem);
 }
 
 /* content wrapper */
@@ -104,10 +103,17 @@
   text-align: center;
 }
 
+.card__text {
+  margin-top: auto;
+}
 /* ========== Results Section ========= */
 
 .home-results__heading-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.home-results__image-wrapper.u-visual-wrap {
+  aspect-ratio: 13.12/7.38;
 }

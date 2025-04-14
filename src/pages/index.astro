@@ -12,6 +12,7 @@ import homeHero6 from "../assets/home-hero-6.avif";
 import homeHero7 from "../assets/home-hero-7.avif";
 import captureBestSelf from "../assets/capture-best-self.avif";
 import showCaseProducts from "../assets/showcase-products.avif";
+import photographyEditing from "../assets/Photography Editing.avif";
 ---
 
 <BaseLayout>
@@ -20,7 +21,7 @@ import showCaseProducts from "../assets/showcase-products.avif";
     <div class="container">
       <!-- Home Hero - Component -->
       <div
-        class="home-hero__component display-flex flex-column align-items-center text-center"
+        class="home-hero__component display-flex flex-column align-items-center text-align-center margin-bottom-xlarge"
       >
         <div class="home-hero__content-wrapper">
           <h1 class="home-hero__eyebrow eyebrow">
@@ -123,7 +124,7 @@ import showCaseProducts from "../assets/showcase-products.avif";
         <!-- Home Headshot - Content Wrapper -->
         <div class="home-headshot__content-wrapper">
           <h2 class="home-headshot__eyebrow eyebrow">Headshot Photography</h2>
-          <h3 class="home-headshot__heading heading-2 margin-heading">
+          <h3 class="home-headshot__heading heading-h2 margin-heading">
             Capture Your Best Self
           </h3>
           <p class="home-headshot__paragraph">
@@ -136,7 +137,19 @@ import showCaseProducts from "../assets/showcase-products.avif";
           </p>
           <div class="home-headshot button-wrapper-group">
             <a href="/contact" class="button">Book a Session</a>
-            <a href="/about" class="button is-secondary">Learn More</a>
+            <a href="/about" class="button is-icon is-text"
+              >Learn More <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.70697 16.9496L15.414 11.2426L9.70697 5.53564L8.29297 6.94964L12.586 11.2426L8.29297 15.5356L9.70697 16.9496Z"
+                  fill="currentColor"></path>
+              </svg>
+            </a>
           </div>
         </div>
         <!-- Home Headshot - Image Wrapper -->
@@ -172,7 +185,7 @@ import showCaseProducts from "../assets/showcase-products.avif";
           <h2 class="home-commercial__eyebrow eyebrow">
             Commercial Photography
           </h2>
-          <h3 class="home-commercial__heading heading-2 margin-heading">
+          <h3 class="home-commercial__heading heading-h2 margin-heading">
             Showcase Your Products and Services
           </h3>
           <p class="home-commercial__paragraph">
@@ -208,7 +221,7 @@ import showCaseProducts from "../assets/showcase-products.avif";
         class="home-experience__heading-wrapper display-flex justify-content-center margin-bottom-large"
       >
         <h2
-          class="home-experience__heading heading-3 max-width-large text-align-center"
+          class="home-experience__heading heading-h3 max-width-large text-align-center"
         >
           Experience, Excellence, & Personal Touch
         </h2>
@@ -305,14 +318,27 @@ import showCaseProducts from "../assets/showcase-products.avif";
   <!-- SECTION - Home Results -->
   <section class="home-result padding-vertical-sitewide">
     <div class="container">
-      <div class="home-results__heading-wrapper text-align-center">
-        <h2 class="home-results__heading heading-style-h2 margin-heading">
+      <!-- Home Results - Heading Wrapper -->
+      <div
+        class="home-results__heading-wrapper text-align-center margin-bottom-xlarge"
+      >
+        <h2 class="home-results__heading heading-h2 margin-heading">
           Pixel Perfect Results
         </h2>
         <p class="home-results_text max-width-medium">
           Every image is not only professionally light, but is meticulously
           edited and retouched in Photoshop for a pixel perfect result.
         </p>
+      </div>
+      <!-- Home Results - Image Wrapper -->
+      <div class="home-results__image-wrapper u-visual-wrap">
+        <Image
+          src={photographyEditing}
+          alt="man sitting at computer ready to edit images pixel perfect"
+          class="home-results__image u-visual"
+          width={photographyEditing.width}
+          height={photographyEditing.height}
+        />
       </div>
     </div>
   </section>

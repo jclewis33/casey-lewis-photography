@@ -47,42 +47,42 @@ h6 {
 
 /*================== Heading utility classes for non-semantic elements ========================*/
 
-.heading-1 {
+.heading-h1 {
   font-size: var(--h1-size);
   font-family: var(--h1-font-family);
   line-height: var(--h1-line-height);
   font-weight: var(--h1-weight);
 }
 
-.heading-2 {
+.heading-h2 {
   font-size: var(--h2-size);
   font-family: var(--h2-font-family);
   line-height: var(--h2-line-height);
   font-weight: var(--h2-weight);
 }
 
-.heading-3 {
+.heading-h3 {
   font-size: var(--h3-size);
   font-family: var(--h3-font-family);
   line-height: var(--h3-line-height);
   font-weight: var(--h3-weight);
 }
 
-.heading-4 {
+.heading-h4 {
   font-size: var(--h4-size);
   font-family: var(--h4-font-family);
   line-height: var(--h4-line-height);
   font-weight: var(--h4-weight);
 }
 
-.heading-5 {
+.heading-h5 {
   font-size: var(--h5-size);
   font-family: var(--h5-font-family);
   line-height: var(--h5-line-height);
   font-weight: var(--h5-weight);
 }
 
-.heading-6 {
+.heading-h6 {
   font-size: var(--h6-size);
   font-family: var(--h6-font-family);
   line-height: var(--h6-line-height);
