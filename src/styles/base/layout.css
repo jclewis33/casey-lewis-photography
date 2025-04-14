@@ -82,9 +82,9 @@
   align-items: flex-end;
 }
 
-/* ============================================================
+/* =======================================================
        GRID UTILITIES
-   ============================================================ */
+========================================================== */
 
 .grid-1 {
   column-gap: var(--grid-gap-standard);
@@ -124,9 +124,15 @@
 
 /* Mobile iPad */
 @media screen and (max-width: 991px) {
-  .grid-2,
   .grid-3,
   .grid-4 {
+    grid-template-columns: var(--grid-1);
+  }
+}
+
+/* Mobile Landscape */
+@media screen and (max-width: 767px) {
+  .grid-2 {
     grid-template-columns: var(--grid-1);
   }
 }

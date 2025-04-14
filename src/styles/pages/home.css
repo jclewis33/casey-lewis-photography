@@ -79,9 +79,35 @@
   aspect-ratio: 1/1;
 }
 
-.home-commercial__image.u-visual {
-  object-position: center 80%;
+@media screen and (max-width: 1010px) {
+  .home-commercial__component.grid-2 {
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+  .home-commercial__content-wrapper {
+    order: -1;
+  }
 }
 
-.home-commercial.button-wrapper-group > .button.is-icon.is-text {
+/* ========== Experience Section ========= */
+
+.home-experience__card-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-style: solid;
+  border-color: var(--border-color-light);
+  border-width: var(--border-width-main);
+  border-radius: var(--radius-main);
+  text-align: center;
+}
+
+/* ========== Results Section ========= */
+
+.home-results__heading-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
