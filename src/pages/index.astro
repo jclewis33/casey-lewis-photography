@@ -10,11 +10,15 @@ import homeHero4 from "../assets/home-hero-4.avif";
 import homeHero5 from "../assets/home-hero-5.avif";
 import homeHero6 from "../assets/home-hero-6.avif";
 import homeHero7 from "../assets/home-hero-7.avif";
+import captureBestSelf from "../assets/capture-best-self.avif";
+import showCaseProducts from "../assets/showcase-products.avif";
 ---
 
 <BaseLayout>
+  <!-- SECTION - Home Hero -->
   <section class="home-hero padding-vertical-sitewide">
     <div class="container">
+      <!-- Home Hero - Component -->
       <div
         class="home-hero__component display-flex flex-column align-items-center text-center"
       >
@@ -22,7 +26,7 @@ import homeHero7 from "../assets/home-hero-7.avif";
           <h1 class="home-hero__eyebrow eyebrow">
             Headshot and Commercial Photography
           </h1>
-          <h2>
+          <h2 class="home-hero__heading margin-heading">
             Enhance Your Image, Attract More Customers, Showcase Your Business
           </h2>
 
@@ -38,6 +42,7 @@ import homeHero7 from "../assets/home-hero-7.avif";
         </div>
       </div>
     </div>
+    <!-- Home Hero - Image Grid -->
     <div class="home-hero__image-grid">
       <Image
         src={homeHero1}
@@ -94,11 +99,14 @@ import homeHero7 from "../assets/home-hero-7.avif";
       />
     </div>
   </section>
+  <!-- SECTION - Home Quote -->
   <section
     class="home-quote padding-vertical-medium background-color-secondary"
   >
     <div class="container">
+      <!-- Home Quote - Component -->
       <div class="home-quote__component">
+        <!-- Home Quote - Text -->
         <h2 class="home-quote__text">
           "Elevate your presence, captivate your audience, and leave lasting
           impressions. Don't let subpar images be the face of your brand.
@@ -107,12 +115,15 @@ import homeHero7 from "../assets/home-hero-7.avif";
       </div>
     </div>
   </section>
+  <!-- SECTION - Home Headshot -->
   <section class="home-headshot padding-vertical-sitewide">
     <div class="container">
+      <!-- Home Headshot - Component -->
       <div class="home-headshot__component grid-2">
+        <!-- Home Headshot - Content Wrapper -->
         <div class="home-headshot__content-wrapper">
           <h2 class="home-headshot__eyebrow eyebrow">Headshot Photography</h2>
-          <h3 class="home-headshot__heading heading-2">
+          <h3 class="home-headshot__heading heading-2 margin-heading">
             Capture Your Best Self
           </h3>
           <p class="home-headshot__paragraph">
@@ -122,6 +133,71 @@ import homeHero7 from "../assets/home-hero-7.avif";
           </p>
           <p class="home-headshot__paragraph">
             Ideal for professionals and creative individuals.
+          </p>
+          <div class="home-headshot button-wrapper-group">
+            <a href="/contact" class="button">Book a Session</a>
+            <a href="/about" class="button is-secondary">Learn More</a>
+          </div>
+        </div>
+        <!-- Home Headshot - Image Wrapper -->
+        <div class="home-headshot__image-wrapper u-visual-wrap">
+          <Image
+            src={captureBestSelf}
+            alt="woman holding water glass in front of black stand at home"
+            class="home-headshot__image u-visual"
+            width={captureBestSelf.width}
+            height={captureBestSelf.height}
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SECTION - Home Commercial -->
+  <section class="home-commercial padding-vertical-sitewide">
+    <div class="container">
+      <!-- Home Commecial - Component -->
+      <div class="home-commercial__component grid-2">
+        <!-- Home Commercial - Image Grid -->
+        <div class="home-commercial__image-wrapper u-visual-wrap">
+          <Image
+            src={showCaseProducts}
+            alt="man pouring a pour over in a coffee shop"
+            class="home-commercial__image u-visual"
+            width={showCaseProducts.width}
+            height={showCaseProducts.height}
+          />
+        </div>
+        <!-- Home Commercial - Content Wrapper -->
+        <div class="home-commercial__content-wrapper">
+          <h2 class="home-commercial__eyebrow eyebrow">
+            Commercial Photography
+          </h2>
+          <h3 class="home-commercial__heading heading-2 margin-heading">
+            Showcase Your Products and Services
+          </h3>
+          <p class="home-commercial__paragraph">
+            From capturing the essence of your workplace to showcasing your
+            products and services, our images tell the story of your business,
+            engaging your audience and enhancing your brand’s visual identity.
+            <p class="home-commercial__paragraph">
+              Ideal for professionals and creative individuals.
+            </p>
+            <div class="home-commercial button-wrapper-group">
+              <a href="/contact" class="button">Book a Session</a>
+              <a href="/about" class="button is-icon is-text"
+                >Learn More <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.70697 16.9496L15.414 11.2426L9.70697 5.53564L8.29297 6.94964L12.586 11.2426L8.29297 15.5356L9.70697 16.9496Z"
+                    fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
           </p>
         </div>
       </div>

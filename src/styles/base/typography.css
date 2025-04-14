@@ -95,6 +95,7 @@ h6 {
   line-height: var(--eyebrow-line-height);
   font-weight: var(--eyebrow-weight);
   text-transform: var(--eyebrow-text-transform);
+  margin-bottom: var(--eyebrow-margin-bottom);
 }
 
 /*============= Display heading styles - for extra large, impactful headings ===============*/
@@ -185,10 +186,11 @@ h6 {
   text-transform: var(--text-xlarge-text-transform);
 }
 
-/* ==========================================================================
+/* ===============================================
    PARAGRAPH STYLES
-   ========================================================================== */
-/* Base Paragraph Styles */
+   =============================================== */
+/* Base Paragraph Styles
+NOTE: these have a bottom margin applied by default except for the last child in a section */
 
 p {
   margin-bottom: 1rem;
@@ -203,9 +205,9 @@ p:last-child {
   margin-bottom: var(--paragraph-spacing-last-child);
 }
 
-/* ==========================================================================
+/* ===============================================
    LINK STYLES
-   ========================================================================== */
+   =============================================== */
 
 /* For links that have classes (most will) */
 a {

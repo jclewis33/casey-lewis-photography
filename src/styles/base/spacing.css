@@ -1,6 +1,7 @@
 /* ================================================================
      VERTICAL PADDING UTILITIES
-===============================================================*/
+=============================================================== 
+NOTE: These are currently tied to the padding variables in the spacing.css variables file. These are fluid responsive using clamp, unlike the margin variables below. */
 
 /* Standard vertical padding - padding for most sections */
 .padding-vertical-sitewide {
@@ -64,4 +65,133 @@
 
 .padding-bottom-none {
   padding-bottom: 0;
+}
+
+/* ================================================================
+     MARGIN UTILITIES
+=============================================================== 
+NOTE: These are currently tied to the --size variables in the spacing.css variables file. These change with the breakpoint, but are not fluid variables */
+
+/* Standard margin - margin for most sections */
+.margin-vertical-sitewide {
+  margin-top: var(--margin-large);
+  margin-bottom: var(--margin-large);
+}
+
+.margin-vertical-xxlarge {
+  margin-top: var(--margin-xxlarge);
+  margin-bottom: var(--margin-xxlarge);
+}
+
+.margin-vertical-xlarge {
+  margin-top: var(--margin-xlarge);
+  margin-bottom: var(--margin-xlarge);
+}
+
+/* Large vertical margin */
+.margin-vertical-large {
+  margin-top: var(--margin-large);
+  margin-bottom: var(--margin-large);
+}
+
+/* Medium vertical margin */
+.margin-vertical-medium {
+  margin-top: var(--margin-medium);
+  margin-bottom: var(--margin-medium);
+}
+
+/* Small vertical margin */
+.margin-vertical-small {
+  margin-top: var(--margin-small);
+  margin-bottom: var(--margin-small);
+}
+
+.margin-vertical-xsmall {
+  margin-top: var(--margin-xsmall);
+  margin-bottom: var(--margin-xsmall);
+}
+
+.margin-vertical-xxsmall {
+  margin-top: var(--margin-xxsmall);
+  margin-bottom: var(--margin-xxsmall);
+}
+
+/* Uneven vertical margin utilities */
+
+.margin-top-xxlarge {
+  margin-top: var(--margin-xxlarge);
+}
+
+.margin-bottom-xxlarge {
+  margin-bottom: var(--margin-xxlarge);
+}
+
+.margin-top-xlarge {
+  margin-top: var(--margin-xlarge);
+}
+
+.margin-bottom-xlarge {
+  margin-bottom: var(--margin-xlarge);
+}
+
+.margin-top-large {
+  margin-top: var(--margin-large);
+}
+
+.margin-bottom-large {
+  margin-bottom: var(--margin-large);
+}
+
+.margin-top-medium {
+  margin-top: var(--margin-medium);
+}
+
+.margin-bottom-medium {
+  margin-bottom: var(--margin-medium);
+}
+
+.margin-top-small {
+  margin-top: var(--margin-small);
+}
+
+.margin-bottom-small {
+  margin-bottom: var(--margin-small);
+}
+
+.margin-top-xsmall {
+  margin-top: var(--margin-xsmall);
+}
+
+.margin-bottom-xsmall {
+  margin-bottom: var(--margin-xsmall);
+}
+
+.margin-top-xxsmall {
+  margin-top: var(--margin-xxsmall);
+}
+
+.margin-bottom-xxsmall {
+  margin-bottom: var(--margin-xxsmall);
+}
+
+/* Remove margin utilities */
+.margin-vertical-none {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.margin-top-none {
+  margin-top: 0;
+}
+
+.margin-bottom-none {
+  margin-bottom: 0;
+}
+
+/* ========== MARGIN HEADING UTILITY ========= */
+
+/* bottom margin for headings */
+
+.margin-heading {
+  margin-bottom: var(--margin-heading);
 }

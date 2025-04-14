@@ -3,6 +3,8 @@
    ========================================================================== */
 
 :root {
+  /* ========== PADDING ========= */
+
   /* Horizontal Section Padding Clamp */
   --padding-global: clamp(1.25rem, 2.018vw + 0.777rem, 2.5rem);
 
@@ -17,6 +19,21 @@
   --padding-section-sitewide: 7rem;
   --padding-section-none: 0rem;
 
+  /* ========== MARGIN ========= */
+
+  /* Create margin variables using the size spacing variables */
+
+  --margin-heading: var(--size-1-5rem);
+
+  --margin-xxlarge: var(--size-6rem);
+  --margin-xlarge: var(--size-5rem);
+  --margin-large: var(--size-4rem);
+  --margin-medium: var(--size-2rem);
+  --margin-small: var(--size-1rem);
+  --margin-xsmall: var(--size-0-5rem);
+  --margin-xxsmall: var(--size-0-25rem);
+
+  /* ========== SIZES ========= */
   /* Sizes */
   --size-0-125rem: 0.125rem;
   --size-0-25rem: 0.25rem;

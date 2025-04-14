@@ -10,10 +10,6 @@
 /* content wrapper */
 
 .home-hero__content-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.5rem;
   max-width: 65ch;
 }
 
@@ -48,3 +44,44 @@
 }
 
 /* ========== Quote Section ========= */
+
+.home-quote__component {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.home-quote__text {
+  font-weight: 100;
+}
+
+/* ========== Headshot Section ========= */
+
+.home-headshot__component.grid-2 {
+  align-items: center;
+}
+
+.home-headshot__image-wrapper.u-visual-wrap {
+  aspect-ratio: 3/4;
+}
+
+.home-headshot__image.u-visual {
+  object-position: center 80%;
+}
+
+/* ========== Commercial Section ========= */
+
+.home-commercial__component.grid-2 {
+  align-items: center;
+  grid-template-columns: 1.75fr 1fr;
+}
+
+.home-commercial__image-wrapper.u-visual-wrap {
+  aspect-ratio: 1/1;
+}
+
+.home-commercial__image.u-visual {
+  object-position: center 80%;
+}
+
+.home-commercial.button-wrapper-group > .button.is-icon.is-text {
+}
