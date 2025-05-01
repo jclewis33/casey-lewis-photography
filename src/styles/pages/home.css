@@ -117,3 +117,52 @@
 .home-results__image-wrapper.u-visual-wrap {
   aspect-ratio: 13.12/7.38;
 }
+
+/* ========== Difference Section ========= */
+
+/* Image Grid Component */
+.home-difference__image-component.grid-3 {
+  gap: var(--grid-gap-1rem);
+}
+
+/* Mobile iPad */
+@media screen and (max-width: 991px) {
+  .home-difference__image-component.grid-3 {
+    grid-template-columns: var(--grid-3);
+  }
+}
+
+/* Mobile Landscape */
+@media screen and (max-width: 767px) {
+  .home-difference__image-component.grid-3 {
+    grid-template-columns: var(--grid-3);
+  }
+}
+
+/* Image Wrapper for each column */
+.home-difference__stacked-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--grid-gap-1rem);
+}
+/* Aspect Ratio Square Images */
+.home-difference__image-wrapper.u-visual-wrap.is-1,
+.home-difference__image-wrapper.u-visual-wrap.is-2,
+.home-difference__image-wrapper.u-visual-wrap.is-5,
+.home-difference__image-wrapper.u-visual-wrap.is-6,
+.home-difference__image-wrapper.u-visual-wrap.is-7 {
+  aspect-ratio: 4.16/4.16;
+}
+
+/* Aspect ration Landscape Images */
+.home-difference__image-wrapper.u-visual-wrap.is-3,
+.home-difference__image-wrapper.u-visual-wrap.is-4 {
+  aspect-ratio: 4.16/2.34;
+}
+
+/* Image */
+.home-difference__image {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
