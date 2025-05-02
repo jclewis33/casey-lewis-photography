@@ -147,6 +147,11 @@ Calculator settings:
   --text-xlarge-line-height: 1.5;
   --text-xlarge-weight: 400;
 
+  --text-xxlarge-font-family: var(--font-secondary);
+  --text-xxlarge-size: 2rem;
+  --text-xxlarge-line-height: 1.5;
+  --text-xxlarge-weight: 400;
+
   /* ==========================================================================
    PARAGRAPH SPACING VARIABLES
    ========================================================================== */
