@@ -1,7 +1,12 @@
 ---
+// Components
 import Image from "astro/components/Image.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import TestimonialsSilder from "../components/TestimonialsSilder.astro";
+import CTASection from "../components/CTASection.astro";
+// Styles
 import "../styles/pages/home.css";
+// Assets - Images
 import portraitOfCasey from "../assets/casey-lewis-owner-casey-lewis-photography.avif";
 import homeHero1 from "../assets/home-hero-1.avif";
 import homeHero2 from "../assets/home-hero-2.avif";
@@ -445,7 +450,9 @@ import difference7 from "../assets/difference-7.avif";
       <div
         class="home-process__heading-wrapper display-flex margin-bottom-large"
       >
-        <h2 class="home-process__heading">Our Process: How We Work Together</h2>
+        <h2 class="home-process__heading heading-h2">
+          Our Process: How We Work Together
+        </h2>
         <p class="home-process__paragraph">
           Whether its your personal image or your business, professional photos
           can set you apart from your competition. Here is what you can expect
@@ -536,4 +543,6 @@ import difference7 from "../assets/difference-7.avif";
       </div>
     </div>
   </section>
+  <!-- CTA -->
+  <CTASection />
 </BaseLayout>

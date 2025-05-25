@@ -45,7 +45,7 @@ h6 {
   font-weight: var(--h6-weight);
 }
 
-/*================== Heading utility classes for non-semantic elements ========================*/
+/*======== Heading utility classes for non-semantic elements ==============*/
 
 .heading-h1 {
   font-size: var(--h1-size);
@@ -98,7 +98,7 @@ h6 {
   margin-bottom: var(--eyebrow-margin-bottom);
 }
 
-/*============= Display heading styles - for extra large, impactful headings ===============*/
+/*======= Display heading styles - for extra large, impactful headings ========*/
 
 .display-xl {
   font-size: var(--display-xl-size);
@@ -128,9 +128,9 @@ h6 {
   font-weight: var(--display-sm-weight);
 }
 
-/* ==========================================================================
+/* ===================================================
        TEXT SIZES
-     ========================================================================== */
+   ================================================= */
 
 .text-size-tiny {
   font-family: var(--text-tiny-font-family);

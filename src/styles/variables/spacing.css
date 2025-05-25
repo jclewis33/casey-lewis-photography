@@ -24,6 +24,7 @@
   /* Create margin variables using the size spacing variables */
 
   --margin-heading: var(--size-1-5rem);
+  --margin-paragraph: var(--size-1-25rem);
 
   --margin-xxlarge: var(--size-6rem);
   --margin-xlarge: var(--size-5rem);

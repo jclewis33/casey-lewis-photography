@@ -5,15 +5,23 @@
 .text-style-strikethrough {
   text-decoration: line-through;
 }
+
 .text-style-italic {
   font-style: italic;
 }
+
+.text-style-bold {
+  font-weight: bold;
+}
+
 .text-style-nowrap {
   white-space: nowrap;
 }
+
 .text-style-muted {
   opacity: 0.75;
 }
+
 .text-style-allcaps {
   text-transform: uppercase;
 }

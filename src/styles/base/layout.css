@@ -38,46 +38,57 @@
        FLEXBOX UTILITIES
    ================================================= */
 
+/* Enable flexbox layout on an element */
 .display-flex {
   display: flex;
 }
 
+/* Arrange flex items horizontally (row direction) */
 .flex-row {
   flex-direction: row;
 }
 
+/* Arrange flex items vertically (column direction) */
 .flex-column {
   flex-direction: column;
 }
 
+/* Allow flex items to wrap onto multiple lines */
 .flex-wrap {
   flex-wrap: wrap;
 }
 
+/* Align flex items to the start of the main axis */
 .justify-content-start {
   justify-content: flex-start;
 }
 
+/* Center flex items along the main axis */
 .justify-content-center {
   justify-content: center;
 }
 
+/* Align flex items to the end of the main axis */
 .justify-content-end {
   justify-content: flex-end;
 }
 
+/* Distribute flex items with space between them */
 .justify-content-between {
   justify-content: space-between;
 }
 
+/* Align flex items to the start of the cross axis */
 .align-items-start {
   align-items: flex-start;
 }
 
+/* Center flex items along the cross axis */
 .align-items-center {
   align-items: center;
 }
 
+/* Align flex items to the end of the cross axis */
 .align-items-end {
   align-items: flex-end;
 }
@@ -155,4 +166,14 @@
 
 .gap-0-5rem {
   gap: var(--grid-gap-0-5rem);
+}
+
+/* =================================================
+       MARGIN UTILITIES
+   ================================================= */
+
+/* Center an element horizontally via automatic left and right margins */
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
 }

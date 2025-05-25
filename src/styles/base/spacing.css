@@ -188,10 +188,16 @@ NOTE: These are currently tied to the --size variables in the spacing.css variab
   margin-bottom: 0;
 }
 
-/* ========== MARGIN HEADING UTILITY ========= */
+/* ========== MARGIN TEXT UTILITY ========= */
 
 /* bottom margin for headings */
 
 .margin-heading {
   margin-bottom: var(--margin-heading);
+}
+
+/* bottom margin for paragraphs */
+
+.margin-paragraph {
+  margin-bottom: var(--margin-paragraph);
 }
