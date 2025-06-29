@@ -120,6 +120,12 @@
 
 /* ========== Difference Section ========= */
 
+/* Paragraph */
+
+.home-difference__paragraph {
+  max-width: 32rem;
+}
+
 /* Image Grid Component */
 .home-difference__image-component.grid-3 {
   gap: var(--grid-gap-1rem);

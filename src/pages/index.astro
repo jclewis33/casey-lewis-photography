@@ -38,19 +38,35 @@ import difference7 from "../assets/difference-7.avif";
         class="home-hero__component display-flex flex-column align-items-center text-align-center margin-bottom-xlarge"
       >
         <div class="home-hero__content-wrapper">
-          <h1 class="home-hero__eyebrow eyebrow">
+          <h1
+            class="home-hero__eyebrow eyebrow"
+            data-splittext
+            data-prevent-flicker="true"
+          >
             Headshot and Commercial Photography
           </h1>
-          <h2 class="home-hero__heading margin-heading">
+          <h2
+            class="home-hero__heading margin-heading"
+            data-splittext
+            data-prevent-flicker="true"
+          >
             Enhance Your Image, Attract More Customers, Showcase Your Business
           </h2>
 
-          <p class="home-hero__paragraph">
+          <p
+            class="home-hero__paragraph"
+            data-splittext
+            data-prevent-flicker="true"
+          >
             Specializing in headshot, commercial, and real estate photography
             across Red Oak, Midlothian, Waxahachie, Dallas, and the entire DFW
             Metroplex.
           </p>
-          <div class="home-hero button-wrapper-group">
+          <div
+            class="home-hero button-wrapper-group"
+            data-fade-up
+            data-prevent-flicker="true"
+          >
             <a href="/contact" class="button">Book a Session</a>
             <a href="/about" class="button is-secondary">Learn More</a>
           </div>
@@ -120,7 +136,7 @@ import difference7 from "../assets/difference-7.avif";
   >
     <div class="container">
       <!-- Home Quote - Component -->
-      <div class="home-quote__component">
+      <div class="home-quote__component" data-splittext>
         <!-- Home Quote - Text -->
         <h2 class="home-quote__text">
           "Elevate your presence, captivate your audience, and leave lasting
@@ -137,19 +153,24 @@ import difference7 from "../assets/difference-7.avif";
       <div class="home-headshot__component grid-2">
         <!-- Home Headshot - Content Wrapper -->
         <div class="home-headshot__content-wrapper">
-          <h2 class="home-headshot__eyebrow eyebrow">Headshot Photography</h2>
-          <h3 class="home-headshot__heading heading-h2 margin-heading">
+          <h2 class="home-headshot__eyebrow eyebrow" data-fade-up>
+            Headshot Photography
+          </h2>
+          <h3
+            class="home-headshot__heading heading-h2 margin-heading"
+            data-splittext
+          >
             Capture Your Best Self
           </h3>
-          <p class="home-headshot__paragraph">
+          <p class="home-headshot__paragraph" data-fade-in>
             Our headshot photography service is designed to elevate your
             personal brand with images that exude confidence, competence, and
             charisma.
           </p>
-          <p class="home-headshot__paragraph">
+          <p class="home-headshot__paragraph" data-fade-in>
             Ideal for professionals and creative individuals.
           </p>
-          <div class="home-headshot button-wrapper-group">
+          <div class="home-headshot button-wrapper-group" data-fade-up>
             <a href="/contact" class="button">Book a Session</a>
             <a href="/about" class="button is-icon is-text"
               >Learn More <svg
@@ -167,7 +188,7 @@ import difference7 from "../assets/difference-7.avif";
           </div>
         </div>
         <!-- Home Headshot - Image Wrapper -->
-        <div class="home-headshot__image-wrapper u-visual-wrap">
+        <div class="home-headshot__image-wrapper u-visual-wrap" data-fade-in>
           <Image
             src={captureBestSelf}
             alt="woman holding water glass in front of black stand at home"
@@ -185,7 +206,7 @@ import difference7 from "../assets/difference-7.avif";
       <!-- Home Commecial - Component -->
       <div class="home-commercial__component grid-2">
         <!-- Home Commercial - Image Grid -->
-        <div class="home-commercial__image-wrapper u-visual-wrap">
+        <div class="home-commercial__image-wrapper u-visual-wrap" data-fade-in>
           <Image
             src={showCaseProducts}
             alt="man pouring a pour over in a coffee shop"
@@ -196,17 +217,20 @@ import difference7 from "../assets/difference-7.avif";
         </div>
         <!-- Home Commercial - Content Wrapper -->
         <div class="home-commercial__content-wrapper">
-          <h2 class="home-commercial__eyebrow eyebrow">
+          <h2 class="home-commercial__eyebrow eyebrow" data-fade-in>
             Commercial Photography
           </h2>
-          <h3 class="home-commercial__heading heading-h2 margin-heading">
+          <h3
+            class="home-commercial__heading heading-h2 margin-heading"
+            data-splittext
+          >
             Showcase Your Products and Services
           </h3>
-          <p class="home-commercial__paragraph">
+          <p class="home-commercial__paragraph" data-splittext>
             From capturing the essence of your workplace to showcasing your
             products and services, our images tell the story of your business,
             engaging your audience and enhancing your brand’s visual identity.
-            <div class="home-commercial button-wrapper-group">
+            <div class="home-commercial button-wrapper-group" data-fade-up>
               <a href="/contact" class="button">Book a Session</a>
               <a href="/about" class="button is-icon is-text"
                 >Learn More <svg
@@ -236,12 +260,13 @@ import difference7 from "../assets/difference-7.avif";
       >
         <h2
           class="home-experience__heading heading-h3 max-width-large text-align-center"
+          data-splittext
         >
           Experience, Excellence, & Personal Touch
         </h2>
       </div>
       <!-- Home Experience - Card Layout -->
-      <div class="home-experience__card-layout grid-3">
+      <div class="home-experience__card-layout grid-3" data-fade-list>
         <!-- Card 1 -->
         <div class="home-experience__card-component background-color-secondary">
           <div class="icon-48">
@@ -336,16 +361,19 @@ import difference7 from "../assets/difference-7.avif";
       <div
         class="home-results__heading-wrapper text-align-center margin-bottom-xlarge"
       >
-        <h2 class="home-results__heading heading-h2 margin-heading">
+        <h2
+          class="home-results__heading heading-h2 margin-heading"
+          data-splittext
+        >
           Pixel Perfect Results
         </h2>
-        <p class="home-results_text max-width-medium">
+        <p class="home-results_text max-width-medium" data-fade-in>
           Every image is not only professionally light, but is meticulously
           edited and retouched in Photoshop for a pixel perfect result.
         </p>
       </div>
       <!-- Home Results - Image Wrapper -->
-      <div class="home-results__image-wrapper u-visual-wrap">
+      <div class="home-results__image-wrapper u-visual-wrap" data-fade-in>
         <Image
           src={photographyEditing}
           alt="man sitting at computer ready to edit images pixel perfect"
@@ -361,10 +389,13 @@ import difference7 from "../assets/difference-7.avif";
     <div class="container">
       <!-- Home Difference - Heading Wrapper -->
       <div class="home-difference__heading-wrapper margin-bottom-large">
-        <h2 class="home-difference__heading heading-h2 margin-heading">
+        <h2
+          class="home-difference__heading heading-h2 margin-heading"
+          data-splittext
+        >
           See the Difference
         </h2>
-        <p class="home-difference__paragraph">
+        <p class="home-difference__paragraph" data-fade-in>
           Whether its your personal image or your business, professional photos
           can set you apart from your competition.
         </p>
@@ -373,7 +404,10 @@ import difference7 from "../assets/difference-7.avif";
       <div class="home-difference__image-component grid-3">
         <!-- Home Difference - Left Image Column -->
         <div class="home-difference__stacked-image-wrapper">
-          <div class="home-difference__image-wrapper u-visual-wrap is-1">
+          <div
+            class="home-difference__image-wrapper u-visual-wrap is-1"
+            data-fade-in
+          >
             <Image
               src={difference1}
               alt="difference image grid"
@@ -382,7 +416,10 @@ import difference7 from "../assets/difference-7.avif";
               height={difference1.height}
             />
           </div>
-          <div class="home-difference__image-wrapper u-visual-wrap is-2">
+          <div
+            class="home-difference__image-wrapper u-visual-wrap is-2"
+            data-fade-in
+          >
             <Image
               src={difference2}
               alt="difference image grid"
@@ -394,7 +431,10 @@ import difference7 from "../assets/difference-7.avif";
         </div>
         <!-- Home Difference - Center Image Column -->
         <div class="home-difference__stacked-image-wrapper">
-          <div class="home-difference__image-wrapper u-visual-wrap is-3">
+          <div
+            class="home-difference__image-wrapper u-visual-wrap is-3"
+            data-fade-in
+          >
             <Image
               src={difference3}
               alt="difference image grid"
@@ -403,7 +443,10 @@ import difference7 from "../assets/difference-7.avif";
               height={difference3.height}
             />
           </div>
-          <div class="home-difference__image-wrapper u-visual-wrap is-4">
+          <div
+            class="home-difference__image-wrapper u-visual-wrap is-4"
+            data-fade-in
+          >
             <Image
               src={difference4}
               alt="difference image grid"
@@ -412,7 +455,10 @@ import difference7 from "../assets/difference-7.avif";
               height={difference4.height}
             />
           </div>
-          <div class="home-difference__image-wrapper u-visual-wrap is-5">
+          <div
+            class="home-difference__image-wrapper u-visual-wrap is-5"
+            data-fade-in
+          >
             <Image
               src={difference5}
               alt="difference image grid"
@@ -424,7 +470,10 @@ import difference7 from "../assets/difference-7.avif";
         </div>
         <!-- Home Difference - Right Image Column -->
         <div class="home-difference__stacked-image-wrapper">
-          <div class="home-difference__image-wrapper u-visual-wrap is-6">
+          <div
+            class="home-difference__image-wrapper u-visual-wrap is-6"
+            data-fade-in
+          >
             <Image
               src={difference6}
               alt="difference image grid"
@@ -433,7 +482,10 @@ import difference7 from "../assets/difference-7.avif";
               height={difference6.height}
             />
           </div>
-          <div class="home-difference__image-wrapper u-visual-wrap is-7">
+          <div
+            class="home-difference__image-wrapper u-visual-wrap is-7"
+            data-fade-in
+          >
             <Image
               src={difference7}
               alt="difference image grid"
@@ -449,19 +501,17 @@ import difference7 from "../assets/difference-7.avif";
   <!-- SECTION - Home Process -->
   <section class="home-process padding-vertical-sitewide">
     <div class="container">
-      <div
-        class="home-process__heading-wrapper display-flex margin-bottom-large"
-      >
-        <h2 class="home-process__heading heading-h2">
+      <div class="home-process__heading-wrapper grid-2 margin-bottom-large">
+        <h2 class="home-process__heading heading-h2" data-splittext>
           Our Process: How We Work Together
         </h2>
-        <p class="home-process__paragraph">
+        <p class="home-process__paragraph" data-fade-in>
           Whether its your personal image or your business, professional photos
           can set you apart from your competition. Here is what you can expect
           as we work together to capture your images.
         </p>
       </div>
-      <div class="home-process__layout">
+      <div class="home-process__layout" data-fade-list>
         <!-- Card 1 -->
         <div class="home-process__card">
           <div class="home-process__card-number heading-h4">1</div>
