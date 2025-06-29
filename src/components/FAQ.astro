@@ -1,0 +1,122 @@
+---
+const faqs = [
+  {
+    question: "What is your photography style?",
+    answer:
+      "I strive to create images that are clean, clear, and true to life, with an emphasis on capturing authentic expressions and moments. My goal is to provide you with photographs that are not only professional but also uniquely expressive of your personality or brand.",
+  },
+  {
+    question: "Where are you located and what areas do you serve?",
+    answer:
+      "I am based in Red Oak, TX, and serve clients throughout the Dallas-Fort Worth Metroplex, including Midlothian, Waxahachie, and Dallas, Texas. I'm willing to travel to client locations within these areas to provide photography services.",
+  },
+  {
+    question: "What is included in my photography package?",
+    answer:
+      "All photography packages include a pre-shoot consultation, the photography session, professional editing of images, and delivery of high-resolution digital files. Additional services and products such as extra editing, physical prints, or special location requests can be arranged for an additional fee.",
+  },
+  {
+    question: "When will I receive my photos?",
+    answer:
+      "You will typically receive your photos within 2-3 weeks after the photo session. If you need photos sooner, please let me know during our initial consultation, and I can accommodate rush orders for an additional fee.",
+  },
+  {
+    question: "How long does a typical photo session last?",
+    answer:
+      "A typical headshot session lasts about 20-60 minutes, while commercial and real estate photography sessions can vary depending on the project scope, usually between 1-4 hours. We will discuss the expected duration during the consultation to ensure it fits your schedule.",
+  },
+  {
+    question:
+      "Do you provide wardrobe or styling advice for headshot sessions?",
+    answer:
+      "Yes, I provide guidance on wardrobe choices and styling to ensure that your headshots reflect your professional image and personal style. I recommend bringing several outfits to the session so we can choose the best one together.",
+  },
+  {
+    question: "Do you offer group discounts for corporate headshots?",
+    answer:
+      "Yes, I offer discounted rates for corporate groups needing headshots. Please contact me with the number of individuals requiring headshots, and I'll provide you with a customized quote based on your specific needs.",
+  },
+  {
+    question: "How do I book a photography session?",
+    answer:
+      "You can book a session by contacting me via phone, email, or the contact form on my website. I recommend reaching out as soon as possible to secure your preferred date, especially during busy seasons.",
+  },
+  {
+    question: "What forms of payment do you accept?",
+    answer:
+      "I accept various forms of payment, including credit cards, checks, and online transfers. Full payment details and due dates will be outlined in our contract.",
+  },
+  {
+    question: "Is there a deposit required to book a session?",
+    answer:
+      "Yes, I require a deposit to secure your booking date. The deposit amount is typically 25% of the estimated total fee. This deposit is applied toward your final bill and is non-refundable in the event of cancellation, though it can be applied to a rescheduled session if changes are made more than 48 hours in advance.",
+  },
+  {
+    question: "What if I need to reschedule or cancel my appointment?",
+    answer:
+      "I understand that schedules can change, and I'm flexible with rescheduling. Please notify me at least 48 hours in advance if you need to reschedule or cancel. Deposits are non-refundable but can be applied to a rescheduled session within the same calendar year.",
+  },
+  {
+    question:
+      "What happens if the weather is bad on the day of an outdoor shoot?",
+    answer:
+      "In case of bad weather, I always have a backup plan. We can reschedule the session to another date at no additional cost, or if an indoor location is suitable and available, we can move the session indoors. I aim to be as flexible as possible to ensure your photo shoot goes smoothly.",
+  },
+  {
+    question: "How can I ensure that the photos will meet my expectations?",
+    answer:
+      "During our pre-shoot consultation, we'll discuss all aspects of your project to ensure I fully understand your expectations. For headshot sessions, I shoot with my camera tethered to my laptop, so you can review the images as we take them, ensuring we capture the perfect image(s) of you.",
+  },
+];
+---
+
+<section class="home-faq padding-vertical-sitewide">
+  <div class="container">
+    <div class="faq-header__heading-wrapper">
+      <h2 class="faq-header__heading heading-h2">FAQ's</h2>
+    </div>
+
+    <div class="faq__component">
+      <div role="list" class="faq__list">
+        {
+          faqs.map((faq) => (
+            <div role="listitem" class="faq__accordion">
+              <div class="faq__question-wrap">
+                <div class="faq__question-text">Q: {faq.question}</div>
+                <div class="faq__icon-wrapper">
+                  <div class="faq__icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 9L12 15L18 9"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__content" style="height: 0px;">
+                <div class="faq__answer-wrapper">
+                  <p>{faq.answer}</p>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  //Import the initialization script
+  import "../scripts/faq.js";
+</script>

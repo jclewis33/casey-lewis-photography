@@ -25,5 +25,7 @@
 
 /* Components */
 @import "./components/footer.css";
-@import "./components/navbar.css"; /* Component styles can be imported here or loaded separately in your application */
+@import "./components/navbar.css";
+@import "./components/faq.css";
+/* Component styles can be imported here or loaded separately in your application */
 /* @import './components/ComponentName/ComponentName.css'; */

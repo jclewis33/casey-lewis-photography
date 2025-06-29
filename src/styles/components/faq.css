@@ -1,0 +1,110 @@
+/* FAQ Header */
+
+.faq-header__heading {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .faq-header__heading {
+    margin-bottom: 2rem;
+  }
+}
+/* FAQ Accordion Styles */
+
+.faq__accordion {
+  border-bottom: 1px solid var(--theme-text-dark);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.faq__accordion:last-child {
+  border-bottom: none;
+}
+
+.faq__cta-wrapper {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 35rem;
+  margin-top: 4rem;
+  display: flex;
+}
+
+.faq__heading-wrapper {
+  text-align: center;
+  width: 100%;
+  max-width: 48rem;
+}
+
+.faq__component {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.faq__icon-wrapper {
+  border: 2px solid var(--theme-text-dark);
+  border-radius: var(--radius-full);
+  flex: none;
+  align-self: flex-start;
+}
+
+.faq__question-text {
+  font-size: var(--text-large-size);
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.faq__question-wrap {
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  display: flex;
+}
+
+.faq__icon {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+}
+
+.faq__content {
+  overflow: hidden;
+}
+
+.faq__answer-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+/* FAQ Icon is-active styles */
+
+.faq__icon-wrapper {
+  transition: background-color 300ms ease;
+}
+
+.faq__icon-wrapper .faq__icon {
+  transition: color 300ms ease, transform 300ms ease;
+}
+
+.faq__icon-wrapper.is-active {
+  background-color: var(--theme-background-light);
+  border-color: var(--theme-background-light);
+}
+
+.faq__icon-wrapper.is-active .faq__icon {
+  transform: rotateZ(180deg);
+  color: var(--theme-text-alternate);
+}
