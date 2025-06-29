@@ -10,82 +10,75 @@ data-prevent-flicker = "true"
 
 ///////////////////// REMOVE DATA PREVENT FLICKER / REGISTER PLUGINS ////////////////////
 
-// If GSAP doesn't run show hidden elements with data-prevent-flicker = true on them
-
-document.addEventListener("DOMContentLoaded", () => {
-  if (typeof window.gsap === "undefined")
+// Function to handle GSAP initialization
+function initGSAP() {
+  if (typeof window.gsap === "undefined") {
+    console.warn("GSAP not found, adding gsap-not-found class");
     document.documentElement.classList.add("gsap-not-found");
+    return false;
+  }
+
+  // Register plugins
   gsap.registerPlugin(ScrollTrigger, SplitText);
+
+  // Immediately make flicker-prevention elements visible since GSAP is loaded
+  const flickerElements = document.querySelectorAll(
+    '[data-prevent-flicker="true"]'
+  );
+  flickerElements.forEach((element) => {
+    element.style.visibility = "visible";
+    element.style.opacity = "0"; // Start transparent for animations
+  });
+
+  return true;
+}
+
+// Check for GSAP as early as possible
+document.addEventListener("DOMContentLoaded", () => {
+  if (initGSAP()) {
+    console.log("GSAP initialized successfully");
+  }
 });
+
+// Failsafe: If GSAP still isn't loaded after 3 seconds, show content
+setTimeout(() => {
+  if (typeof window.gsap === "undefined") {
+    console.warn("GSAP failed to load after timeout, showing content anyway");
+    document.documentElement.classList.add("gsap-not-found");
+  }
+}, 3000);
+
 ///////////////////// NAVBAR ANIMATION ////////////////
 
 // select the navbar using data attribute
 const navbar = document.querySelector('[data-animation="navbar"]');
 
-// Scroll down 50px - used to apply initial styles to navbar (background color & box shadow)
-/*ScrollTrigger.create({
-    start: "top -50px",
+if (navbar && typeof gsap !== "undefined") {
+  // Scroll down 100px - used to initially move the scrollbar off screen. Will bring the navbar back when scrolled back to the top.
+  ScrollTrigger.create({
+    start: "top -100px",
     end: 99999,
-    // call applyStyles function on navbar variable
-    onEnter: () => applyStyles(navbar),
-    // call removeStyles function on navbar variable
-    onLeaveBack: () => removeStyles(navbar),
-  });*/
+    // moves the navbar off screen when page scrolled down 100px
+    onEnter: () => gsap.to(navbar, { y: "-100%", duration: 0.3 }),
+    // moves the navbar back on screen when page scrolled back past the 100px mark
+    onLeaveBack: () => gsap.to(navbar, { y: "0%", duration: 0.3 }),
+  });
 
-// Scroll down 100px - used to initially move the scrollbar off screen. Will bring the navbar back when scrolled back to the top.
-ScrollTrigger.create({
-  start: "top -100px",
-  end: 99999,
-  // moves the navbar off screen when page scrolled down 100px
-  onEnter: () => gsap.to(navbar, { y: "-100%", duration: 0.3 }),
-  // moves the navbar back on screen when page scrolled back past the 100px mark
-  onLeaveBack: () => gsap.to(navbar, { y: "0%", duration: 0.3 }),
-});
-
-// When scrolled past 100px mark. Uses self.direction to determine whether user is scrolling down the page or back up the page. Depending on direction, the navbar will move out of view or move into view.
-ScrollTrigger.create({
-  start: "top -100px",
-  end: 99999,
-  onUpdate: (self) => {
-    // When page is scrolled up, navbar moves into view
-    if (self.direction === -1) {
-      gsap.to(navbar, { y: "0%", duration: 0.3 });
-      // When page is scrolled down, navbar is moved out of view. Also checks to see if scroll position is greater than 100px from the top of the page.
-    } else if (self.direction === 1 && self.scroll() > 100) {
-      gsap.to(navbar, { y: "-100%", duration: 0.3 });
-    }
-  },
-});
-
-// Function that applies styles to navbar.
-// Since this navbar has a dark and light mode, different colors area applied based on dark or light mode. Check occurs in boxShadowColor and backgroundColor to determine if the light-mode class is applied.
-/*function applyStyles(navbar) {
-    // Variables that determine the style to be applied to the navbar.
-    // Be sure to apply light-mode to the .navbar_wrapper. Done by setting a class attribute on the .navbar_wrapper in Webflow, leave value blank, attach to a property that allows user to enter light-mode into the property field in Webflow
-    //const isLightMode = navbar.classList.contains("light-mode");
-    const boxShadowColor = "rgba(255, 255, 255, 0.1)";
-    //const backgroundColor = isLightMode
-      //? "var(--background-color--primary)"
-      //: "var(--background-color--alternate)";
-
-    // GSAP method that actually applies the colors to the navbar
-    gsap.to(navbar, {
-      boxShadow: `0 4px 8px ${boxShadowColor}`,
-      //backgroundColor: backgroundColor,
-      duration: 0.3,
-    });
-  }*/
-
-// function that removes the styles from the navbar. Occurs when scroll position is less than 50px from top of screen. See first scrollTrigger.
-/* function removeStyles(navbar) {
-    gsap.to(navbar, {
-      boxShadow: "none",
-      //backgroundColor: "transparent",
-      duration: 0.3,
-    });
-  }*/
-
-///////////////////// NAVBAR ANIMATION END ////////////////
+  // When scrolled past 100px mark. Uses self.direction to determine whether user is scrolling down the page or back up the page. Depending on direction, the navbar will move out of view or move into view.
+  ScrollTrigger.create({
+    start: "top -100px",
+    end: 99999,
+    onUpdate: (self) => {
+      // When page is scrolled up, navbar moves into view
+      if (self.direction === -1) {
+        gsap.to(navbar, { y: "0%", duration: 0.3 });
+        // When page is scrolled down, navbar is moved out of view. Also checks to see if scroll position is greater than 100px from the top of the page.
+      } else if (self.direction === 1 && self.scroll() > 100) {
+        gsap.to(navbar, { y: "-100%", duration: 0.3 });
+      }
+    },
+  });
+}
 
 ///////////////////// ANIMATION FUNCTIONS ////////////////
 
@@ -100,8 +93,16 @@ function initSplitText() {
     );
 
     elems.forEach((el) => {
-      // make sure the element is visible before split
-      gsap.set(el, { autoAlpha: 1 });
+      // Check if this element should prevent flicker
+      const preventFlicker = el.getAttribute("data-prevent-flicker") === "true";
+
+      if (preventFlicker) {
+        // Element is already visible from initGSAP, start with opacity 0
+        gsap.set(el, { opacity: 0 });
+      } else {
+        // make sure the element is visible before split
+        gsap.set(el, { autoAlpha: 1 });
+      }
 
       // split + animate when split occurs
       SplitText.create(el, {
@@ -111,12 +112,7 @@ function initSplitText() {
         linesClass: "line",
         onSplit: (self) => {
           // `self.lines` is an array of <div class="line"> wrappers
-          const tween = gsap.from(self.lines, {
-            duration: 1.6,
-            yPercent: 100,
-            opacity: 0,
-            stagger: 0.1,
-            ease: "expo.out",
+          const tween = gsap.timeline({
             scrollTrigger: {
               trigger: el,
               start: "top 75%",
@@ -125,6 +121,27 @@ function initSplitText() {
               // markers: true,    // enable to debug trigger points
             },
           });
+
+          if (preventFlicker) {
+            // First make the container visible, then animate lines
+            tween.set(el, { opacity: 1 }).from(self.lines, {
+              duration: 1.6,
+              yPercent: 100,
+              opacity: 0,
+              stagger: 0.1,
+              ease: "expo.out",
+            });
+          } else {
+            // Standard animation
+            tween.from(self.lines, {
+              duration: 1.6,
+              yPercent: 100,
+              opacity: 0,
+              stagger: 0.1,
+              ease: "expo.out",
+            });
+          }
+
           return tween; // return so SplitText knows about this tween
         },
       });
@@ -155,10 +172,8 @@ function initFadeIn() {
       });
 
       if (preventFlicker) {
-        // For elements with flicker prevention:
-        // 1. First set visibility to 1 but opacity to 0 (makes it visible but transparent)
-        // 2. Then animate from opacity 0 to 1
-        tl.set(el, { visibility: "visible", opacity: 0 }).to(el, {
+        // Element is already visible from initGSAP, just animate opacity
+        tl.to(el, {
           opacity: 1,
           duration: duration,
         });
@@ -196,8 +211,8 @@ function initFadeUp() {
       });
 
       if (preventFlicker) {
-        // Make visible but keep opacity 0, then animate
-        tl.set(el, { visibility: "visible", opacity: 0, y: distance }).to(el, {
+        // Element is already visible, set initial animation state and animate
+        tl.set(el, { y: distance }).to(el, {
           opacity: 1,
           y: 0,
           duration: duration,
@@ -240,10 +255,7 @@ function initFadeList() {
       });
 
       if (preventFlicker) {
-        // First make the container visible
-        tl.set(list, { visibility: "visible" });
-
-        // Then animate children from hidden to visible with stagger
+        // List is already visible, animate children
         tl.fromTo(
           list.children,
           { opacity: 0, y: 20 },
@@ -304,6 +316,12 @@ function initManualRefresh() {
 
 // Master init function
 function initScrollAnimations() {
+  // Check if GSAP is available
+  if (typeof gsap === "undefined") {
+    console.warn("GSAP not available, skipping animation initialization");
+    return;
+  }
+
   // Only kill animation ScrollTriggers, preserve pins and other ScrollTriggers
   ScrollTrigger.getAll().forEach((trigger) => {
     const triggerEl = trigger.vars.trigger;
