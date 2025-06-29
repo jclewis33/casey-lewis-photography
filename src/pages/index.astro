@@ -38,19 +38,35 @@ import difference7 from "../assets/difference-7.avif";
         class="home-hero__component display-flex flex-column align-items-center text-align-center margin-bottom-xlarge"
       >
         <div class="home-hero__content-wrapper">
-          <h1 class="home-hero__eyebrow eyebrow">
+          <h1
+            class="home-hero__eyebrow eyebrow"
+            data-splittext
+            data-prevent-flicker="true"
+          >
             Headshot and Commercial Photography
           </h1>
-          <h2 class="home-hero__heading margin-heading">
+          <h2
+            class="home-hero__heading margin-heading"
+            data-splittext
+            data-prevent-flicker="true"
+          >
             Enhance Your Image, Attract More Customers, Showcase Your Business
           </h2>
 
-          <p class="home-hero__paragraph">
+          <p
+            class="home-hero__paragraph"
+            data-splittext
+            data-prevent-flicker="true"
+          >
             Specializing in headshot, commercial, and real estate photography
             across Red Oak, Midlothian, Waxahachie, Dallas, and the entire DFW
             Metroplex.
           </p>
-          <div class="home-hero button-wrapper-group">
+          <div
+            class="home-hero button-wrapper-group"
+            data-fade-up
+            data-prevent-flicker="true"
+          >
             <a href="/contact" class="button">Book a Session</a>
             <a href="/about" class="button is-secondary">Learn More</a>
           </div>
@@ -65,6 +81,7 @@ import difference7 from "../assets/difference-7.avif";
         class="home-hero__image is-1"
         width={homeHero1.width}
         height={homeHero1.height}
+        style={`aspect-ratio: ${homeHero1.width}/${homeHero1.height}`}
       />
       <div class="home-hero__stacked-image-wrapper">
         <Image
@@ -73,6 +90,7 @@ import difference7 from "../assets/difference-7.avif";
           class="home-hero__image is-2"
           width={homeHero2.width}
           height={homeHero2.height}
+          style={`aspect-ratio: ${homeHero2.width}/${homeHero2.height}`}
         />
         <Image
           src={homeHero3}
@@ -80,6 +98,7 @@ import difference7 from "../assets/difference-7.avif";
           class="home-hero__image is-3"
           width={homeHero3.width}
           height={homeHero3.height}
+          style={`aspect-ratio: ${homeHero3.width}/${homeHero3.height}`}
         />
       </div>
       <Image
@@ -88,6 +107,7 @@ import difference7 from "../assets/difference-7.avif";
         class="home-hero__image is-4"
         width={homeHero4.width}
         height={homeHero4.height}
+        style={`aspect-ratio: ${homeHero4.width}/${homeHero4.height}`}
       />
       <div class="home-hero__stacked-image-wrapper">
         <Image
@@ -96,6 +116,7 @@ import difference7 from "../assets/difference-7.avif";
           class="home-hero__image is-5"
           width={homeHero5.width}
           height={homeHero5.height}
+          style={`aspect-ratio: ${homeHero5.width}/${homeHero5.height}`}
         />
         <Image
           src={homeHero6}
@@ -103,6 +124,7 @@ import difference7 from "../assets/difference-7.avif";
           class="home-hero__image is-6"
           width={homeHero6.width}
           height={homeHero6.height}
+          style={`aspect-ratio: ${homeHero6.width}/${homeHero6.height}`}
         />
       </div>
       <Image
@@ -111,6 +133,7 @@ import difference7 from "../assets/difference-7.avif";
         class="home-hero__image is-7"
         width={homeHero7.width}
         height={homeHero7.height}
+        style={`aspect-ratio: ${homeHero7.width}/${homeHero7.height}`}
       />
     </div>
   </section>
