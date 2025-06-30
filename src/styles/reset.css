@@ -102,7 +102,7 @@ select:focus-visible {
   border-radius: var(--radius-small);
 }
 
-/* Data Prevent Flicker Attribute and Remove if No Script Loaded  */
+/* Data Prevent Flicker Attribute to keep flicker from occuring with GSAP  */
 
 html:not(.gsap-not-found) [data-prevent-flicker="true"] {
   visibility: hidden;
