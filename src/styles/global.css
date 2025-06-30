@@ -5,6 +5,7 @@
 
 /* Base reset */
 @import "./reset.css";
+@import "./fonts.css";
 
 /* Variables */
 @import "./variables/typography.css";

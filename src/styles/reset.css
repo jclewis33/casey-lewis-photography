@@ -101,3 +101,15 @@ select:focus-visible {
   outline-offset: var(--focus-offset-outer);
   border-radius: var(--radius-small);
 }
+
+/* Data Prevent Flicker Attribute and Remove if No Script Loaded  */
+
+html:not(.gsap-not-found) [data-prevent-flicker="true"] {
+  visibility: hidden;
+}
+.line-mask,
+.word-mask,
+.char-mask {
+  padding-block: 0.1em;
+  margin-block: -0.1em;
+}

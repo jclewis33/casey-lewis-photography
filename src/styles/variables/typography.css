@@ -10,8 +10,8 @@ Calculator settings:
 
 :root {
   /* Font Families */
-  --font-primary: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  --font-secondary: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  --font-primary: Montserrat, "Helvetica Neue", Helvetica, sans-serif;
+  --font-secondary: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
   --font-alternate: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
   /* Text Transforms */
