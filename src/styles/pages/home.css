@@ -22,7 +22,7 @@
 .home-hero__image-grid {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(7, auto);
+  grid-template-columns: repeat(5, 1fr);
   gap: 0.25rem;
   align-items: center;
   overflow-x: hidden;
