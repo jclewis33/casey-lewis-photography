@@ -5,9 +5,10 @@
 
 /* Base reset */
 @import "./reset.css";
-@import "./fonts.css";
+@import "./switzer.css";
 
 /* Variables */
+@import "./variables/base.css";
 @import "./variables/typography.css";
 @import "./variables/colors.css";
 @import "./variables/spacing.css";
@@ -18,7 +19,6 @@
 /* Base styles */
 @import "./base/utilities.css";
 @import "./base/typography.css";
-@import "./base/text-utilities.css";
 @import "./base/layout.css";
 @import "./base/buttons.css";
 @import "./base/spacing.css";

@@ -6,7 +6,28 @@
   /* ========== PADDING ========= */
 
   /* Horizontal Section Padding Clamp */
-  --padding-global: clamp(1.25rem, 2.018vw + 0.777rem, 2.5rem);
+  /* --padding-global: clamp(1.25rem, 2.018vw + 0.777rem, 2.5rem); */
+  --padding-global-min: 1.25;
+  --padding-global-max: 2.5;
+
+  --padding-global: clamp(
+    var(--padding-global-min) * 1rem,
+    (
+      (
+          var(--padding-global-min) -
+            (
+              (var(--padding-global-max) - var(--padding-global-min)) /
+                (var(--screen-size--max) - var(--screen-size--min)) *
+                var(--screen-size--min)
+            )
+        ) * 1rem +
+        (
+          (var(--padding-global-max) - var(--padding-global-min)) /
+            (var(--screen-size--max) - var(--screen-size--min))
+        ) * 100vw
+    ),
+    var(--padding-global-max) * 1rem
+  );
 
   /* Vertical Section Padding Clamp */
   --padding-small: clamp(2rem, 3.229vw + 1.243rem, 4rem);

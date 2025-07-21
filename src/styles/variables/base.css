@@ -1,0 +1,35 @@
+:root {
+  /* ====================================================
+       Screen Sizes
+     ====================================================
+   Defines the min and max screen size for fluid sizing calculations */
+  --screen-size--min: 23.4375; /* 375px */
+  --screen-size--max: 85.375; /* 1366px */
+}
+
+/* Example of how to add a clamp function that can be easily updated by tweaking to variables
+
+Create a min and max variable for the the fluid size, then replace those variables in the clamp function below 
+
+  --h2-min: 2.25;
+  --h2-max: 3;
+  --h2-size: clamp(
+    var(--h2-min) * 1rem,
+    (
+      (
+          var(--h2-min) -
+            (
+              (var(--h2-max) - var(--h2-min)) /
+                (var(--screen-size--max) - var(--screen-size--min)) *
+                var(--screen-size--min)
+            )
+        ) * 1rem +
+        (
+          (var(--h2-max) - var(--h2-min)) /
+            (var(--screen-size--max) - var(--screen-size--min))
+        ) * 100vw
+    ),
+    var(--h2-max) * 1rem
+  );
+
+*/

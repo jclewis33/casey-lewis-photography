@@ -10,8 +10,8 @@ Calculator settings:
 
 :root {
   /* Font Families */
-  --font-primary: Montserrat, "Helvetica Neue", Helvetica, sans-serif;
-  --font-secondary: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  --font-primary: "Switzer", "Helvetica Neue", Helvetica, sans-serif;
+  --font-secondary: "Switzer", "Helvetica Neue", Helvetica, sans-serif;
   --font-alternate: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
   /* Text Transforms */
@@ -65,43 +65,66 @@ Calculator settings:
   --h1-size: clamp(2.5rem, 2.422vw + 1.932rem, 4rem);
   --h1-font-family: var(--font-primary);
   --h1-line-height: 1.2;
-  --h1-weight: 700;
+  --h1-weight: 600;
 
   /* Heading 2 - Section titles */
-  --h2-size: clamp(2.25rem, 1.211vw + 1.966rem, 3rem);
+  /* --h2-size: clamp(2.25rem, 1.211vw + 1.966rem, 3rem); */
+  --h2-min: 2.25; /*min-size*/
+  --h2-max: 3; /*max-size*/
+
+  /*fluid size*/
+  --h2-size: clamp(
+    var(--h2-min) * 1rem,
+    (
+      (
+          var(--h2-min) -
+            (
+              (var(--h2-max) - var(--h2-min)) /
+                (var(--screen-size--max) - var(--screen-size--min)) *
+                var(--screen-size--min)
+            )
+        ) * 1rem +
+        (
+          (var(--h2-max) - var(--h2-min)) /
+            (var(--screen-size--max) - var(--screen-size--min))
+        ) * 100vw
+    ),
+    var(--h2-max) * 1rem
+  );
+
   --h2-font-family: var(--font-primary);
   --h2-line-height: 1.2;
-  --h2-weight: 700;
+  --h2-weight: 600;
 
   /* Heading 3 - Subsection titles */
   --h3-size: clamp(2rem, 0.807vw + 1.811rem, 2.5rem);
   --h3-font-family: var(--font-primary);
   --h3-line-height: 1.3;
-  --h3-weight: 700;
+  --h3-weight: 600;
 
   /* Heading 4 - Card or panel headings */
   --h4-size: clamp(1.5rem, 0.807vw + 1.311rem, 2rem);
   --h4-font-family: var(--font-primary);
   --h4-line-height: 1.3;
-  --h4-weight: 700;
+  --h4-weight: 600;
 
   /* Heading 5 - Small section titles */
   --h5-size: clamp(1.25rem, 0.404vw + 1.155rem, 1.5rem);
   --h5-font-family: var(--font-primary);
   --h5-line-height: 1.4;
-  --h5-weight: 700;
+  --h5-weight: 600;
 
   /* Heading 6 - The smallest heading */
   --h6-size: clamp(1.125rem, 0.202vw + 1.078rem, 1.25rem);
   --h6-font-family: var(--font-primary);
   --h6-line-height: 1.4;
-  --h6-weight: 700;
+  --h6-weight: 600;
 
   /* Eyebrow - Text that Appears on Top */
   --eyebrow-size: 1.125rem;
   --eyebrow-font-family: var(--font-primary);
   --eyebrow-line-height: 1.4;
-  --eyebrow-weight: 700;
+  --eyebrow-weight: 600;
   --eyebrow-text-transform: var(--text-transform-uppercase);
   --eyebrow-margin-bottom: var(--size-1rem);
 
